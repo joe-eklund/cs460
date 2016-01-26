@@ -1,0 +1,585 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\setlength{\parindent}{1.4em}
+\usepackage[parfill]{parskip}
+
+\begin{document}
+
+\lstset{
+  language=Python,
+  basicstyle=\small,          % print whole listing small
+  keywordstyle=\bfseries,
+  identifierstyle=,           % nothing happens
+  commentstyle=,              % white comments
+  stringstyle=\ttfamily,      % typewriter type for strings
+  showstringspaces=false,     % no special string spaces
+  numbers=left,
+  numberstyle=\tiny,
+  numbersep=5pt,
+  frame=tb,
+}
+
+\title{Network Simulation}
+
+\author{Brandt Elison & Joe Eklund}
+
+\date{January 26, 2016}
+
+\maketitle
+
+\section{Two Nodes}
+
+The following experiments were performed on a simulated two-node network with two unidirection links connecting each node to the other. Throughout the rest of this section, we will refer to these two nodes as $n_1$ and $n_2$.
+
+This section details three experiments done with this network. Each experiment measures the delay on one or more packets being sent from $n_1$ to $n_2$. The experiments each use different values for link speed, propagation delay, and the number and timing of packets sent. The simulated packets in these experiments are all of size 1000 bytes.
+
+\begin{description}
+\item[Experiment 1] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed: 1 Mbps
+\item Propagation delay: 1000 ms
+\item Packets sent: 1 packet at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+# n1 n2
+# n2 n1
+## link configuration
+# n1 n2 1Mbps 1000ms
+# n2 n1 1Mbps 1000ms
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+
+p = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                  protocol='delay',length=1000)
+Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The following calculations show that the expected delay for this simulation should be 1.008 seconds:
+
+$delay_{trans} = \frac{8000 bits}{10^{6}bps} = .008s = 8ms$
+
+$delay_{prop} = 1000ms$
+
+$delay_{total} = delay_{trans} + delay_{prop} = 1008ms = 1.008s$
+
+\medskip
+
+The simulator output is as follows:
+
+\medskip
+
+\begin{lstlisting}
+1.008 1 0 1.008 0.008 1.0 0
+\end{lstlisting}
+
+\medskip
+
+The first element of the simulator output represents the total delay from transmitting the packet. This value for delay (1.008 seconds) matches the delay that we calculated by hand, which shows that the simulator is accurate.
+
+\item[Experiment 2] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed: 100 bps
+\item Propagation delay: 10 ms
+\item Packets sent: 1 packet at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+# n1 n2
+# n2 n1
+## link configuration
+# n1 n2 100bps 10ms
+# n2 n1 100bps 10ms
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+
+p = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                  protocol='delay',length=1000)
+Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The following calculations show that the expected delay for this simulation should be 80.01 seconds:
+
+$delay_{trans} = \frac{8000 bits}{100 bps} = 80s $
+
+$delay_{prop} = 10ms = .01s$
+
+$delay_{total} = delay_{trans} + delay_{prop} = 80.01s $
+
+\medskip
+
+The simulator output is as follows:
+
+\medskip
+
+\begin{lstlisting}
+80.01 1 0 80.01 80.0 0.01 0
+\end{lstlisting}
+
+\medskip
+
+The first element of the simulator output represents the total delay from transmitting the packet. This value for delay (80.01 seconds) matches the delay that we calculated by hand, which shows that the simulator is accurate.
+
+\item[Experiment 3] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed: 1 Mbps
+\item Propagation delay: 10 ms
+\item Packets sent: 3 packets at $t = 0$; 1 packet at $t = 2s$. We will refer to these packets as $p_1$, $p_2$, $p_3$, and $p_4$ respectively
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+# n1 n2
+# n2 n1
+## link configuration
+# n1 n2 1Mbps 10ms
+# n2 n1 1Mbps 10ms
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+
+p1 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                    protocol='delay',length=1000)
+Sim.scheduler.add(delay=0, event=p1, handler=n1.send_packet)
+
+p2 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                    protocol='delay',length=1000)
+Sim.scheduler.add(delay=0, event=p2, handler=n1.send_packet)
+
+p3 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                    protocol='delay',length=1000)
+Sim.scheduler.add(delay=0, event=p3, handler=n1.send_packet)
+
+# Late packet
+p4 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
+                    protocol='delay',length=1000)
+Sim.scheduler.add(delay=2, event=p4, handler=n1.send_packet)
+\end{lstlisting}
+
+The following calculations show the expected delay for $p_1$:
+
+$delay_{trans} = \frac{8000 bits}{10^{6}bps} = .008s = 8ms$
+
+$delay_{prop} = 10ms = .01s$
+
+$delay_{total} = delay_{trans} + delay_{prop} = .018s $
+
+$p_2$, $p_3$, and $p_4$ are the same size as $p_1$, so each takes the same amount of time to go from $n_1$ to $n_2$ once they have begun to transmit. However, each of these packets is delayed for various reasons, so they do not arrive at $t = .018s$ like $p_1$ does.
+
+$p_2$ and $p_3$ are delayed by queing delay as they wait for their turn to begin transmitting. Each must wait for the transmission delay of the previous packet(s) to elapse before it can begin to transmit, so the following delays exist for $p_2$ and $p_3$:
+
+$delay_{p_{2}} = delay_{p_{1}} + delay_{trans} = .026s$
+
+$delay_{p_{3}} = delay_{p_{2}} + delay_{trans} = .034s$
+
+$p_4$ is delayed purely because it is transmitted 2 seconds later than the other packets. By the time it begins transmitting, the other packets have already arrived at $n_2$. Therefore,
+
+$delay_{p_{4}} = 2s + delay_{p_{1}} = 2.018s$
+
+\medskip
+
+The simulator output is as follows:
+
+\medskip
+
+\begin{lstlisting}
+0.018 1 0 0.018 0.008 0.01 0
+0.026 1 0 0.026 0.008 0.01 0.008
+0.034 1 0 0.034 0.008 0.01 0.016
+2.018 1 2.0 0.018 0.008 0.01 0.0
+\end{lstlisting}
+
+\medskip
+
+The first element of each line of the simulator output represents the total delay from transmitting each packet in order. The values for delay (.018, .026, .034, and 2.018 seconds) match the delay that we calculated by hand, which shows that the simulator is accurate.
+
+\end{description}
+
+\section{Three Nodes}
+
+The following experiments were performed on a simulated three-node network with two unidirection links connecting $n_1$ with $n_2$ and two unidirection links connecting $n_2$ with $n_3$. Throughout the rest of this section, we will refer to these three nodes as $n_1$, $n_2$, and $n_3$.
+
+This section details two experiments done with this network. Each experiment measures the delay on one or more packets being sent from $n_1$ to $n_3$. The experiments each use different values for link speeds and propagation delays. The simulated packets in these experiments are all of size 1000 bytes.
+
+\begin{description}
+\item[Experiment 1] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed $n_1$ to $n_2$: 1 Mbps
+\item Link speed $n_2$ to $n_3$: 1 Mbps
+\item Propagation delay $n_1$ to $n_2$: 100 ms
+\item Propagation delay $n_2$ to $n_3$: 100 ms
+\item Packets sent: 1000 packets at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+#n1 n2
+#n2 n1 n3
+#n3 n2
+# link configuration
+#n1 n2 1Mbps 100ms
+#n2 n1 1Mbps 100ms
+#n2 n3 1Mbps 100ms
+#n3 n2 1Mbps 100ms
+
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n3 = net.get_node('n3')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+
+for i in range(1000):
+  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The simulator output is as follows:
+
+\begin{lstlisting}
+0.216 1 0 0.216 0.016 0.2 0.0
+0.224 1 0 0.224 0.016 0.2 0.008
+0.232 1 0 0.232 0.016 0.2 0.016
+0.24 1 0 0.24 0.016 0.2 0.024
+...
+8.192 1 0 8.192 0.016 0.2 7.976
+8.2 1 0 8.2 0.016 0.2 7.984
+8.208 1 0 8.208 0.016 0.2 7.992
+\end{lstlisting}
+
+If we were to change both link speeds to 1 Gbps, the simulator produces the following:
+
+\begin{lstlisting}
+0.200016 1 0 0.200016 1.6e-05 0.2 0.0
+0.200024 1 0 0.200024 1.6e-05 0.2 8e-06
+0.200032 1 0 0.200032 1.6e-05 0.2 1.6e-05
+0.20004 1 0 0.20004 1.6e-05 0.2 2.4e-05
+...
+0.207992 1 0 0.207992 1.6e-05 0.2 0.007976
+0.208 1 0 0.208 1.6e-05 0.2 0.007984
+0.208008 1 0 0.208008 1.6e-05 0.2 0.007992
+\end{lstlisting}
+
+Based on the first output, it takes 8.208 seconds to send a 1 MB file from $n_1$ to $n_2$. The total delay from transmission on the last packet was 8.008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that transmission delay dominated.
+
+Based on the second output, if we change the link speeds to 1 Gbps, it takes 0.208008 seconds to transfer a 1 MB file. The total delay from transmission on the last packet was .008008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that propagation delay dominated.
+
+\begin{description}
+\item[Experiment 1] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed $n_1$ to $n_2$: 1 Mbps
+\item Link speed $n_2$ to $n_3$: 1 Mbps
+\item Propagation delay $n_1$ to $n_2$: 100 ms
+\item Propagation delay $n_2$ to $n_3$: 100 ms
+\item Packets sent: 1000 packets at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+#n1 n2
+#n2 n1 n3
+#n3 n2
+# link configuration
+#n1 n2 1Mbps 100ms
+#n2 n1 1Mbps 100ms
+#n2 n3 1Mbps 100ms
+#n3 n2 1Mbps 100ms
+
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n3 = net.get_node('n3')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+
+for i in range(1000):
+  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The simulator output is as follows:
+
+\begin{lstlisting}
+0.216 1 0 0.216 0.016 0.2 0.0
+0.224 1 0 0.224 0.016 0.2 0.008
+0.232 1 0 0.232 0.016 0.2 0.016
+0.24 1 0 0.24 0.016 0.2 0.024
+...
+8.192 1 0 8.192 0.016 0.2 7.976
+8.2 1 0 8.2 0.016 0.2 7.984
+8.208 1 0 8.208 0.016 0.2 7.992
+\end{lstlisting}
+
+If we were to change both link speeds to 1 Gbps, the simulator produces the following:
+
+\begin{lstlisting}
+0.200016 1 0 0.200016 1.6e-05 0.2 0.0
+0.200024 1 0 0.200024 1.6e-05 0.2 8e-06
+0.200032 1 0 0.200032 1.6e-05 0.2 1.6e-05
+0.20004 1 0 0.20004 1.6e-05 0.2 2.4e-05
+...
+0.207992 1 0 0.207992 1.6e-05 0.2 0.007976
+0.208 1 0 0.208 1.6e-05 0.2 0.007984
+0.208008 1 0 0.208008 1.6e-05 0.2 0.007992
+\end{lstlisting}
+
+Based on the first output, it takes 8.208 seconds to send a 1 MB file from $n_1$ to $n_2$. The total delay from transmission on the last packet was 8.008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that transmission delay dominated.
+
+Based on the second output, if we change the link speeds to 1 Gbps, it takes 0.208008 seconds to transfer a 1 MB file. The total delay from transmission on the last packet was .008008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that propagation delay dominated.
+
+
+\begin{description}
+\item[Experiment 1] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed $n_1$ to $n_2$: 1 Mbps
+\item Link speed $n_2$ to $n_3$: 1 Mbps
+\item Propagation delay $n_1$ to $n_2$: 100 ms
+\item Propagation delay $n_2$ to $n_3$: 100 ms
+\item Packets sent: 1000 packets at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+#n1 n2
+#n2 n1 n3
+#n3 n2
+# link configuration
+#n1 n2 1Mbps 100ms
+#n2 n1 1Mbps 100ms
+#n2 n3 1Mbps 100ms
+#n3 n2 1Mbps 100ms
+
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n3 = net.get_node('n3')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+
+for i in range(1000):
+  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The simulator output is as follows:
+
+\begin{lstlisting}
+0.216 1 0 0.216 0.016 0.2 0.0
+0.224 1 0 0.224 0.016 0.2 0.008
+0.232 1 0 0.232 0.016 0.2 0.016
+0.24 1 0 0.24 0.016 0.2 0.024
+...
+8.192 1 0 8.192 0.016 0.2 7.976
+8.2 1 0 8.2 0.016 0.2 7.984
+8.208 1 0 8.208 0.016 0.2 7.992
+\end{lstlisting}
+
+If we were to change both link speeds to 1 Gbps, the simulator produces the following:
+
+\begin{lstlisting}
+0.200016 1 0 0.200016 1.6e-05 0.2 0.0
+0.200024 1 0 0.200024 1.6e-05 0.2 8e-06
+0.200032 1 0 0.200032 1.6e-05 0.2 1.6e-05
+0.20004 1 0 0.20004 1.6e-05 0.2 2.4e-05
+...
+0.207992 1 0 0.207992 1.6e-05 0.2 0.007976
+0.208 1 0 0.208 1.6e-05 0.2 0.007984
+0.208008 1 0 0.208008 1.6e-05 0.2 0.007992
+\end{lstlisting}
+
+Based on the first output, it takes 8.208 seconds to send a 1 MB file from $n_1$ to $n_3$. The total delay from transmission on the last packet was 8.008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that transmission delay dominated.
+
+Based on the second output, if we change the link speeds to 1 Gbps, it takes 0.208008 seconds to transfer a 1 MB file. The total delay from transmission on the last packet was .008008 seconds while the total propogation delay on that packet was 0.2 seconds. Therefore, we can see that propagation delay dominated.
+
+\begin{description}
+\item[Experiment 2] \hfill \break
+The following parameters were used for this experiment:
+
+\begin{itemize}
+\item Link speed $n_1$ to $n_2$: 1 Mbps
+\item Link speed $n_2$ to $n_3$: 256 Kbps
+\item Propagation delay $n_1$ to $n_2$: 100 ms
+\item Propagation delay $n_2$ to $n_3$: 100 ms
+\item Packets sent: 1000 packets at $t = 0$
+\end{itemize}
+
+\medskip
+
+The following code was used to create the network:
+
+\medskip
+
+\begin{lstlisting}
+# The 'path' variable below references the following network configuration:
+#n1 n2
+#n2 n1 n3
+#n3 n2
+# link configuration
+#n1 n2 1Mbps 100ms
+#n2 n1 1Mbps 100ms
+#n2 n3 256Kbps 100ms
+#n3 n2 256Kbps 100ms
+
+
+# setup network
+net = Network(path)
+
+# setup routes
+n1 = net.get_node('n1')
+n2 = net.get_node('n2')
+n3 = net.get_node('n3')
+n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+
+# setup app
+d = DelayHandler()
+net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+
+for i in range(1000):
+  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
+\end{lstlisting}
+
+The simulator output is as follows:
+
+\begin{lstlisting}
+0.23925 1 0 0.23925 0.03925 0.2 0.0
+0.2705 1 0 0.2705 0.03925 0.2 0.03125
+0.30175 1 0 0.30175 0.03925 0.2 0.0625
+0.333 1 0 0.333 0.03925 0.2 0.09375
+...
+31.3955 1 0 31.3955 0.03925 0.2 31.15625
+31.42675 1 0 31.42675 0.03925 0.2 31.1875
+31.458 1 0 31.458 0.03925 0.2 31.21875
+\end{lstlisting}
+
+Based on the above output, it takes 31.458 seconds to send a 1 MB file from $n_1$ to $n_3$. This figure is logical based on output 1 of the Experiment 1. The only difference between the network in Experiment 1 and the network in this experiment is the link speed on the $n_2$ to $n_3$ link. The link in Experiment 1 was 4 times as fast as the link in this experiment, so it makes sense that the overall transmission delay in this experiments was about 4 times larger than that of Experiment 1. Therefore, 31.458 seconds of overall delay makes sense for Experiment 2.
+
+\end{document}

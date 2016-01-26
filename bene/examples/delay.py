@@ -32,8 +32,16 @@ class Generator(object):
         Sim.scheduler.add(delay=random.expovariate(self.load), event='generate', handler=self.handle)
 
 class DelayHandler(object):
+
+    def __init__(self, inFile=None):
+        self.toWrite = inFile
+
     def receive_packet(self,packet):
-        print Sim.scheduler.current_time(),packet.ident,packet.created,Sim.scheduler.current_time() - packet.created,packet.transmission_delay,packet.propagation_delay,packet.queueing_delay
+        if self.toWrite is None:
+            print Sim.scheduler.current_time(),packet.ident,packet.created,Sim.scheduler.current_time() - packet.created,packet.transmission_delay,packet.propagation_delay,packet.queueing_delay
+        else:
+            outputLine = ','.join(str(x) for x in [Sim.scheduler.current_time(),packet.ident,packet.created,Sim.scheduler.current_time() - packet.created,packet.transmission_delay,packet.propagation_delay,packet.queueing_delay])
+            self.toWrite.write(outputLine + '\n')
 
 if __name__ == '__main__':
     # parameters
@@ -48,16 +56,22 @@ if __name__ == '__main__':
     n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
     n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
 
+    value = .98
+    newFile = open('../lab1/output/' + str(3 + value) + '_out.csv', 'w')
+
     # setup app
-    d = DelayHandler()
+    d = DelayHandler(newFile)
+
     net.nodes['n2'].add_protocol(protocol="delay",handler=d)
 
     # setup packet generator
     destination = n2.get_address('n1')
     max_rate = 1000000/(1000*8)
-    load = 0.8*max_rate
+    load = value*max_rate
     g = Generator(node=n1,destination=destination,load=load,duration=10)
     Sim.scheduler.add(delay=0, event='generate', handler=g.handle)
     
     # run the simulation
     Sim.scheduler.run()
+
+    newFile.close()
