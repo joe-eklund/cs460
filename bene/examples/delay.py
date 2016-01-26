@@ -58,6 +58,7 @@ if __name__ == '__main__':
 
     value = .98
     newFile = open('../lab1/output/' + str(3 + value) + '_out.csv', 'w')
+    newFile.write('a,b,c,d,e,f,g')
 
     # setup app
     d = DelayHandler(newFile)
