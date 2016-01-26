@@ -13,16 +13,17 @@ class Plotter:
 
     def linePlot(self):
         """ Create a line graph. """
-        data = pd.read_csv("./output/3.10_out.csv")
+        data = pd.read_csv("./output/3_out.csv")
+        print data
         plt.figure()
-        ax = data.plot(x='Time',y='Value of Company')
-        ax.set_xlabel("Days")
-        ax.set_ylabel("Dollars (millions)")
+        ax = data.plot(x='x',y='y')
+        ax.set_xlabel("Utilization")
+        ax.set_ylabel("Queueing Delay (ms)")
         fig = ax.get_figure()
         fig.savefig('line.png')
 
 if __name__ == '__main__':
     p = Plotter()
     p.linePlot()
-    p.boxPlot()
-    p.histogramPlot()
+    #p.boxPlot()
+    #p.histogramPlot()
