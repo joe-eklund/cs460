@@ -12,7 +12,8 @@ import random
 
 class DelayHandler(object):
 	def receive_packet(self,packet):
-		print Sim.scheduler.current_time(),packet.ident,packet.created,Sim.scheduler.current_time() - packet.created,packet.transmission_delay,packet.propagation_delay,packet.queueing_delay
+		""",packet.ident,Sim.scheduler.current_time() - packet.created"""
+		print Sim.scheduler.current_time(),packet.created,packet.transmission_delay,packet.propagation_delay,packet.queueing_delay
 
 def setupNetwork(path):
 	# parameters

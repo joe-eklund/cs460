@@ -17,26 +17,26 @@ class Plotter:
         const = 1.0/(2.0*mu)
         val = p/(1.0-p)
         toReturn = const * val
-        for idx, val in enumerate(toReturn):
-            if val > .3:
-                toReturn[idx] = .3
+
         return toReturn
 
     def linePlot(self):
         """ Create a line graph. """
         data = pd.read_csv("./output/3_out.csv")
-        print data.as_matrix(['x']).flatten()
-
         # print data
         plt.figure()
         ax = data.plot(x='x',y='Average')
         ax.set_xlabel("Utilization")
         ax.set_ylabel("Queueing Delay (ms)")
 
-        x = np.linspace(.1, 1, 100)
+        x = np.linspace(.1, .98, 100)
         plt.plot(x,self.theory(x),label='Theory')
 
-        plt.show()
+        plt.legend()
+
+        # plt.show()
+        fig = ax.get_figure()
+        fig.savefig('queing.png')
 
         # print range(0,5,.1)
         # fig.savefig('line.png')
