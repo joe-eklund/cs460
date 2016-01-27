@@ -38,7 +38,7 @@
 
 \section{Two Nodes}
 
-The following experiments were performed on a simulated two-node network with two unidirection links connecting each node to the other. Throughout the rest of this section, we will refer to these two nodes as $n_1$ and $n_2$.
+The following experiments were performed on a simulated two-node network with two unidirectional links connecting each node to the other. Throughout the rest of this section, we will refer to these two nodes as $n_1$ and $n_2$.
 
 This section details three experiments done with this network. Each experiment measures the delay on one or more packets being sent from $n_1$ to $n_2$. The experiments each use different values for link speed, propagation delay, and the number and timing of packets sent. The simulated packets in these experiments are all of size 1000 bytes.
 
@@ -59,7 +59,7 @@ Snippet \ref{sec1exp1} below was used to create the network.
 \medskip
 
 \begin{lstlisting}[caption={Network 1.1},label=sec1exp1]
-# The 'path' variable below references the following network configuration:
+# The `path' variable below references the following network configuration:
 # n1 n2
 # n2 n1
 ## link configuration
@@ -70,17 +70,17 @@ Snippet \ref{sec1exp1} below was used to create the network.
 net = Network(path)
 
 # setup routes
-n1 = net.get_node('n1')
-n2 = net.get_node('n2')
-n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n1 = net.get_node(`n1')
+n2 = net.get_node(`n2')
+n1.add_forwarding_entry(address=n2.get_address(`n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address(`n2'),link=n2.links[0])
 
 # setup app
 d = DelayHandler()
-net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+net.nodes[`n2'].add_protocol(protocol="delay",handler=d)
 
-p = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                  protocol='delay',length=1000)
+p = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                  protocol=`delay',length=1000)
 Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
 \end{lstlisting}
 
@@ -133,7 +133,7 @@ Snippet \ref{sec1exp2} was used to create the network.
 \medskip
 
 \begin{lstlisting}[caption={Network 1.2},label=sec1exp2]
-# The 'path' variable below references the following network configuration:
+# The `path' variable below references the following network configuration:
 # n1 n2
 # n2 n1
 ## link configuration
@@ -144,17 +144,17 @@ Snippet \ref{sec1exp2} was used to create the network.
 net = Network(path)
 
 # setup routes
-n1 = net.get_node('n1')
-n2 = net.get_node('n2')
-n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n1 = net.get_node(`n1')
+n2 = net.get_node(`n2')
+n1.add_forwarding_entry(address=n2.get_address(`n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address(`n2'),link=n2.links[0])
 
 # setup app
 d = DelayHandler()
-net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+net.nodes[`n2'].add_protocol(protocol="delay",handler=d)
 
-p = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                  protocol='delay',length=1000)
+p = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                  protocol=`delay',length=1000)
 Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
 \end{lstlisting}
 
@@ -207,7 +207,7 @@ Snippet \ref{sec1exp3} was used to create the network.
 \medskip
 
 \begin{lstlisting}[caption={Network 1.3},label=sec1exp3]
-# The 'path' variable below references the following network configuration:
+# The `path' variable below references the following network configuration:
 # n1 n2
 # n2 n1
 ## link configuration
@@ -218,30 +218,30 @@ Snippet \ref{sec1exp3} was used to create the network.
 net = Network(path)
 
 # setup routes
-n1 = net.get_node('n1')
-n2 = net.get_node('n2')
-n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+n1 = net.get_node(`n1')
+n2 = net.get_node(`n2')
+n1.add_forwarding_entry(address=n2.get_address(`n1'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address(`n2'),link=n2.links[0])
 
 # setup app
 d = DelayHandler()
-net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+net.nodes[`n2'].add_protocol(protocol="delay",handler=d)
 
-p1 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                    protocol='delay',length=1000)
+p1 = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                    protocol=`delay',length=1000)
 Sim.scheduler.add(delay=0, event=p1, handler=n1.send_packet)
 
-p2 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                    protocol='delay',length=1000)
+p2 = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                    protocol=`delay',length=1000)
 Sim.scheduler.add(delay=0, event=p2, handler=n1.send_packet)
 
-p3 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                    protocol='delay',length=1000)
+p3 = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                    protocol=`delay',length=1000)
 Sim.scheduler.add(delay=0, event=p3, handler=n1.send_packet)
 
 # Late packet
-p4 = packet.Packet(destination_address=n2.get_address('n1'),ident=1, \
-                    protocol='delay',length=1000)
+p4 = packet.Packet(destination_address=n2.get_address(`n1'),ident=1, \
+                    protocol=`delay',length=1000)
 Sim.scheduler.add(delay=2, event=p4, handler=n1.send_packet)
 \end{lstlisting}
 
@@ -299,7 +299,7 @@ The Arrival Time in Table \ref{tbl1.3} represents the total delay from transmitt
 
 \section{Three Nodes}
 
-The following experiments were performed on a simulated three-node network with two unidirection links connecting $n_1$ with $n_2$ and two unidirection links connecting $n_2$ with $n_3$. Throughout the rest of this section, we will refer to these three nodes as $n_1$, $n_2$, and $n_3$.
+The following experiments were performed on a simulated three-node network with two unidirectional links connecting $n_1$ with $n_2$ and two unidirectional links connecting $n_2$ with $n_3$. Throughout the rest of this section, we will refer to these three nodes as $n_1$, $n_2$, and $n_3$.
 
 This section details two experiments done with this network. Each experiment measures the delay on one or more packets being sent from $n_1$ to $n_3$. The experiments each use different values for link speeds and propagation delays. The simulated packets in these experiments are all of size 1000 bytes.
 
@@ -322,7 +322,7 @@ Snippet \ref{sec2exp1} was used to create the network.
 \medskip
 
 \begin{lstlisting}[caption={Network 2.1},label=sec2exp1]
-# The 'path' variable below references the following network configuration:
+# The `path' variable below references the following network configuration:
 #n1 n2
 #n2 n1 n3
 #n3 n2
@@ -337,22 +337,22 @@ Snippet \ref{sec2exp1} was used to create the network.
 net = Network(path)
 
 # setup routes
-n1 = net.get_node('n1')
-n2 = net.get_node('n2')
-n3 = net.get_node('n3')
-n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
-n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
-n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
-n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
-n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+n1 = net.get_node(`n1')
+n2 = net.get_node(`n2')
+n3 = net.get_node(`n3')
+n1.add_forwarding_entry(address=n2.get_address(`n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address(`n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address(`n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address(`n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address(`n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address(`n3'),link=n3.links[0])
 
 # setup app
 d = DelayHandler()
-net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+net.nodes[`n3'].add_protocol(protocol="delay",handler=d)
 
 for i in range(1000):
-  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  p = packet.Packet(destination_address=n3.get_address(`n2'),ident=1,protocol=`delay',length=1000)
   Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
 \end{lstlisting}
 
@@ -430,7 +430,7 @@ Snippet \ref{sec2exp2} was used to create the network:
 \medskip
 
 \begin{lstlisting}[caption={Network 2.2},label=sec2exp2]
-# The 'path' variable below references the following network configuration:
+# The `path' variable below references the following network configuration:
 #n1 n2
 #n2 n1 n3
 #n3 n2
@@ -445,22 +445,22 @@ Snippet \ref{sec2exp2} was used to create the network:
 net = Network(path)
 
 # setup routes
-n1 = net.get_node('n1')
-n2 = net.get_node('n2')
-n3 = net.get_node('n3')
-n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-n1.add_forwarding_entry(address=n3.get_address('n2'),link=n1.links[0])
-n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
-n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[1])
-n3.add_forwarding_entry(address=n1.get_address('n2'),link=n3.links[0])
-n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[0])
+n1 = net.get_node(`n1')
+n2 = net.get_node(`n2')
+n3 = net.get_node(`n3')
+n1.add_forwarding_entry(address=n2.get_address(`n1'),link=n1.links[0])
+n1.add_forwarding_entry(address=n3.get_address(`n2'),link=n1.links[0])
+n2.add_forwarding_entry(address=n1.get_address(`n2'),link=n2.links[0])
+n2.add_forwarding_entry(address=n3.get_address(`n2'),link=n2.links[1])
+n3.add_forwarding_entry(address=n1.get_address(`n2'),link=n3.links[0])
+n3.add_forwarding_entry(address=n2.get_address(`n3'),link=n3.links[0])
 
 # setup app
 d = DelayHandler()
-net.nodes['n3'].add_protocol(protocol="delay",handler=d)
+net.nodes[`n3'].add_protocol(protocol="delay",handler=d)
 
 for i in range(1000):
-  p = packet.Packet(destination_address=n3.get_address('n2'),ident=1,protocol='delay',length=1000)
+  p = packet.Packet(destination_address=n3.get_address(`n2'),ident=1,protocol=`delay',length=1000)
   Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
 \end{lstlisting}
 
@@ -523,14 +523,14 @@ for value in values:
         # setup app
         d = DelayHandler(newFile)
 
-        net.nodes['n2'].add_protocol(protocol="delay",handler=d)
+        net.nodes[`n2'].add_protocol(protocol="delay",handler=d)
 
         # calculate values for transmission delay and load
         max_rate = 1000000/(1000*8)
         load = value*max_rate
 
         # setup packet generator
-        destination = n2.get_address('n1')
+        destination = n2.get_address(`n1')
         g = Generator(node=n1,destination=destination,load=load,duration=10)
         Sim.scheduler.add(delay=0, event='generate', handler=g.handle)
         

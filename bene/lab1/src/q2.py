@@ -1,5 +1,5 @@
 import sys
-sys.path.append('..')
+sys.path.append('../..')
 
 from src.sim import Sim
 from src import node
@@ -43,7 +43,7 @@ def setupNetwork(path):
 def prt1():
 
 
-	n1, n2, n3, net = setupNetwork('./networks/2-1.txt')
+	n1, n2, n3, net = setupNetwork('../networks/2-1.txt')
 
 	queuePackets(1000, n1, n2, n3)
 
@@ -53,7 +53,7 @@ def prt1():
 
 def prt2():
 
-	n1, n2, n3, net = setupNetwork('./networks/2-2.txt')
+	n1, n2, n3, net = setupNetwork('../networks/2-2.txt')
 	
 	queuePackets(1000, n1, n2, n3)
 
@@ -64,7 +64,7 @@ def prt2():
 """
 	def prt3():
 
-		n1, n2, net = setupNetwork('./networks/1-3.txt')
+		n1, n2, net = setupNetwork('../networks/1-3.txt')
 
 		# send three packets at time 0
 		p1 = packet.Packet(destination_address=n2.get_address('n1'),ident=1,protocol='delay',length=1000)

@@ -22,7 +22,7 @@ class Plotter:
 
     def linePlot(self):
         """ Create a line graph. """
-        data = pd.read_csv("./output/3_out.csv")
+        data = pd.read_csv("../output/3_out.csv")
         # print data
         plt.figure()
         ax = data.plot(x='x',y='Average')
@@ -36,7 +36,7 @@ class Plotter:
 
         # plt.show()
         fig = ax.get_figure()
-        fig.savefig('queing.png')
+        fig.savefig('../report/queing.png')
 
         # print range(0,5,.1)
         # fig.savefig('line.png')
