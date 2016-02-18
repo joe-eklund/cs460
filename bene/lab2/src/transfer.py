@@ -1,22 +1,20 @@
 import sys
-sys.path.append('..')
 
-from src.sim import Sim
-from src.node import Node
-from src.link import Link
-from src.transport import Transport
-from src.tcp import TCP
-
-from networks.network import Network
+from sim import Sim
+from node import Node
+from link import Link
+from transport import Transport
+from tcp import TCP
+from network import Network
 
 import optparse
 import os
 import subprocess
 
 class AppHandler(object):
-    def __init__(self,filename):
+    def __init__(self,filename, directory):
         self.filename = filename
-        self.directory = 'received'
+        self.directory = directory
         if not os.path.exists(self.directory):
             os.makedirs(self.directory)
         self.f = open("%s/%s" % (self.directory,self.filename),'w')
@@ -28,7 +26,8 @@ class AppHandler(object):
 
 class Main(object):
     def __init__(self):
-        self.directory = 'received'
+        self.out_directory = '../output/received'
+        self.in_directory = '../data'
         self.parse_options()
         self.run()
         self.diff()
@@ -50,7 +49,7 @@ class Main(object):
         self.loss = options.loss
 
     def diff(self):
-        args = ['diff','-u',self.filename,self.directory+'/'+self.filename]
+        args = ['diff','-u',self.in_directory + '/' + self.filename,self.out_directory+'/'+self.filename]
         result = subprocess.Popen(args,stdout = subprocess.PIPE).communicate()[0]
         print
         if not result:
@@ -67,7 +66,7 @@ class Main(object):
         Sim.set_debug('TCP')
 
         # setup network
-        net = Network('../lab2/networks/test1.txt')
+        net = Network('../networks/test1.txt')
         net.loss(self.loss)
 
         # setup routes
@@ -81,14 +80,15 @@ class Main(object):
         t2 = Transport(n2)
 
         # setup application
-        a = AppHandler(self.filename)
+        a = AppHandler(self.filename, self.out_directory)
 
         # setup connection
         c1 = TCP(t1,n1.get_address('n2'),1,n2.get_address('n1'),1,a,window=500)
         c2 = TCP(t2,n2.get_address('n1'),1,n1.get_address('n2'),1,a,window=500)
 
         # send a file
-        with open(self.filename,'r') as f:
+        print self.filename
+        with open(self.in_directory + '/' + self.filename,'r') as f:
             while True:
                 data = f.read(10000)
                 if not data:

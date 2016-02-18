@@ -1,0 +1,104 @@
+received data of size:10000
+send buffer next: 1000
+send buffer base: 0
+0 n1 (1) sending TCP segment to 2 for 0
+send buffer next: 2000
+send buffer base: 0
+0 n1 (1) sending TCP segment to 2 for 1000
+send buffer next: 3000
+send buffer base: 0
+0 n1 (1) sending TCP segment to 2 for 2000
+breaking out of the loop
+0.0108 n2 (2) received TCP segment from 1 for 0
+0.0108 application got 1000 bytes
+0.0108 n2 (2) sending TCP ACK to 1 for 1000
+0.0116 n2 (2) received TCP segment from 1 for 1000
+0.0116 application got 1000 bytes
+0.0116 n2 (2) sending TCP ACK to 1 for 2000
+0.0124 n2 (2) received TCP segment from 1 for 2000
+0.0124 application got 1000 bytes
+0.0124 n2 (2) sending TCP ACK to 1 for 3000
+About to check ack_number > sequence: 1000 ? 0
+Handling Ack with an ack number of: 1000
+After handling the ack, our buffer base is 1000 and next is 3000
+send buffer next: 4000
+send buffer base: 1000
+0.0208 n1 (1) sending TCP segment to 2 for 3000
+breaking out of the loop
+About to check ack_number > sequence: 2000 ? 1000
+Handling Ack with an ack number of: 2000
+After handling the ack, our buffer base is 2000 and next is 4000
+send buffer next: 5000
+send buffer base: 2000
+0.0216 n1 (1) sending TCP segment to 2 for 4000
+breaking out of the loop
+About to check ack_number > sequence: 3000 ? 2000
+Handling Ack with an ack number of: 3000
+After handling the ack, our buffer base is 3000 and next is 5000
+send buffer next: 6000
+send buffer base: 3000
+0.0224 n1 (1) sending TCP segment to 2 for 5000
+breaking out of the loop
+0.0316 n2 (2) received TCP segment from 1 for 3000
+0.0316 application got 1000 bytes
+0.0316 n2 (2) sending TCP ACK to 1 for 4000
+0.0324 n2 (2) received TCP segment from 1 for 4000
+0.0324 application got 1000 bytes
+0.0324 n2 (2) sending TCP ACK to 1 for 5000
+0.0332 n2 (2) received TCP segment from 1 for 5000
+0.0332 application got 1000 bytes
+0.0332 n2 (2) sending TCP ACK to 1 for 6000
+About to check ack_number > sequence: 4000 ? 3000
+Handling Ack with an ack number of: 4000
+After handling the ack, our buffer base is 4000 and next is 6000
+send buffer next: 7000
+send buffer base: 4000
+0.0416 n1 (1) sending TCP segment to 2 for 6000
+breaking out of the loop
+About to check ack_number > sequence: 5000 ? 4000
+Handling Ack with an ack number of: 5000
+After handling the ack, our buffer base is 5000 and next is 7000
+send buffer next: 8000
+send buffer base: 5000
+0.0424 n1 (1) sending TCP segment to 2 for 7000
+breaking out of the loop
+About to check ack_number > sequence: 6000 ? 5000
+Handling Ack with an ack number of: 6000
+After handling the ack, our buffer base is 6000 and next is 8000
+send buffer next: 9000
+send buffer base: 6000
+0.0432 n1 (1) sending TCP segment to 2 for 8000
+breaking out of the loop
+0.0524 n2 (2) received TCP segment from 1 for 6000
+0.0524 application got 1000 bytes
+0.0524 n2 (2) sending TCP ACK to 1 for 7000
+0.0532 n2 (2) received TCP segment from 1 for 7000
+0.0532 application got 1000 bytes
+0.0532 n2 (2) sending TCP ACK to 1 for 8000
+0.054 n2 (2) received TCP segment from 1 for 8000
+0.054 application got 1000 bytes
+0.054 n2 (2) sending TCP ACK to 1 for 9000
+About to check ack_number > sequence: 7000 ? 6000
+Handling Ack with an ack number of: 7000
+After handling the ack, our buffer base is 7000 and next is 9000
+send buffer next: 10000
+send buffer base: 7000
+0.0624 n1 (1) sending TCP segment to 2 for 9000
+breaking out of the loop
+About to check ack_number > sequence: 8000 ? 7000
+Handling Ack with an ack number of: 8000
+After handling the ack, our buffer base is 8000 and next is 10000
+breaking out of the loop
+About to check ack_number > sequence: 9000 ? 8000
+Handling Ack with an ack number of: 9000
+After handling the ack, our buffer base is 9000 and next is 10000
+breaking out of the loop
+0.0732 n2 (2) received TCP segment from 1 for 9000
+0.0732 application got 1000 bytes
+0.0732 n2 (2) sending TCP ACK to 1 for 10000
+About to check ack_number > sequence: 10000 ? 9000
+Handling Ack with an ack number of: 10000
+After handling the ack, our buffer base is 10000 and next is 10000
+breaking out of the loop
+
+File transfer correct!

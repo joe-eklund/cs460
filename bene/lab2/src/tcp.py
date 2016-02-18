@@ -1,10 +1,9 @@
 import sys
-sys.path.append('..')
 
-from src.sim import Sim
-from src.connection import Connection
-from src.tcppacket import TCPPacket
-from src.buffer import SendBuffer,ReceiveBuffer
+from sim import Sim
+from connection import Connection
+from tcppacket import TCPPacket
+from buffer import SendBuffer,ReceiveBuffer
 
 class TCP(Connection):
     ''' A TCP connection between two hosts.'''
