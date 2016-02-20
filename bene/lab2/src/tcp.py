@@ -13,7 +13,11 @@ class TCP(Connection):
                             destination_address,destination_port,app)
 
         ### Sender functionality
-
+        self.totalQueueingDelay = 0.0
+        self.totalPacketsSent = 0
+        self.output = False
+        self.dynamic = True
+        self.proveTimer = False
         # send window; represents the total number of bytes that may
         # be outstanding at one time
         # Step 2
@@ -29,7 +33,9 @@ class TCP(Connection):
         # retransmission timer
         self.timer = None
         # timeout duration in seconds
-        self.timeout = 3.0
+        self.timeout = 1.0
+        if self.dynamic:
+            self.timeout = 3.0
         # estimated rtt
         self.est_rtt = None
         # alpha
@@ -38,8 +44,6 @@ class TCP(Connection):
         self.var_rtt = None  ## TODO: revisit this later
         # beta
         self.beta = 0.25
-        # timer start
-        self.start_time = 0.0
         ### Receiver functionality
 
         # receive buffer
@@ -60,6 +64,7 @@ class TCP(Connection):
         if packet.length > 0:
             # handle data
             self.handle_data(packet)
+            self.totalQueueingDelay += packet.queueing_delay
 
     ''' Sender '''
 
@@ -68,7 +73,8 @@ class TCP(Connection):
     ''' 1 '''
     def send(self,data):
         # Step 1
-        print "received data of size:" + str(len(data))
+        if self.output:
+            print "received data of size:" + str(len(data))
         self.send_buffer.put(data)
         self.send_max()
         
@@ -80,15 +86,18 @@ class TCP(Connection):
 
             dataSize = min((self.window - (self.send_buffer.next - self.send_buffer.base)), self.mss)
             dataToSend, sequenceToSend = self.send_buffer.get(dataSize)
-            # print "sending this data: " + str(dataToSend)
-            # print "the sequence of that data :" + str(sequenceToSend)
-            # print "the size of that data :" + str(len(dataToSend))
+            if self.output:
+                # print "sending this data: " + str(dataToSend)
+                # print "the sequence of that data :" + str(sequenceToSend)
+                # print "the size of that data :" + str(len(dataToSend))
 
-            print "send buffer next: " +  str(self.send_buffer.next)
-            print "send buffer base: " +  str(self.send_buffer.base)
+                print "send buffer next: " +  str(self.send_buffer.next)
+                print "send buffer base: " +  str(self.send_buffer.base)
 
             self.send_packet(dataToSend, sequenceToSend)
-        print "breaking out of the loop"
+
+        if self.output:
+            print "breaking out of the loop"
 
     def send_packet(self,data,sequence):
         packet = TCPPacket(source_address=self.source_address,
@@ -102,28 +111,34 @@ class TCP(Connection):
         # send the packet
         self.trace("%s (%d) sending TCP segment to %d for %d" % (self.node.hostname,self.source_address,self.destination_address,packet.sequence))
         self.transport.send_packet(packet)
+        self.totalPacketsSent += 1
         # Step 4
         # set a timer
         if not self.timer:
+            if self.proveTimer:
+                print "Starting timer with timeout of: " + str(self.timeout)
             self.timer = Sim.scheduler.add(delay=self.timeout, event='retransmit', handler=self.retransmit)
-            self.start_time = Sim.scheduler.current_time()
 
     def handle_ack(self,packet):
         ''' Handle an incoming ACK. '''
         ''' Do elements 5, 6, and 7 '''
         ''' Also adjust the timer somewhere...'''
-        print "About to check ack_number > sequence: " + str(packet.ack_number) + " ? " + str(self.sequence)
+        if self.output:
+            print "About to check ack_number > sequence: " + str(packet.ack_number) + " ? " + str(self.sequence)
         if packet.ack_number > self.sequence:
 
             sample_rtt = Sim.scheduler.current_time() - packet.time_stamp
             self.cancel_timer()
-            self.adjust_timeout(sample_rtt)
+            if self.dynamic:
+                self.adjust_timeout(sample_rtt)
 
             self.sequence = packet.ack_number
-            print "Handling Ack with an ack number of: " + str(packet.ack_number)
+            if self.output:
+                print "Handling Ack with an ack number of: " + str(packet.ack_number)
             if not self.send_buffer.slide(self.sequence):
                 self.cancel_timer()
-            print "After handling the ack, our buffer base is " + str(self.send_buffer.base) + " and next is " + str(self.send_buffer.next)
+            if self.output:
+                print "After handling the ack, our buffer base is " + str(self.send_buffer.base) + " and next is " + str(self.send_buffer.next)
             self.send_max()
 
 
@@ -131,6 +146,10 @@ class TCP(Connection):
         ''' Retransmit data. '''
         ''' 8 and 9 '''
         self.timer = None
+        if self.dynamic:
+            self.timeout *= 2
+            if self.proveTimer:
+                print "**Timer expired. Doubled timeout to " + str(self.timeout)
         dataToRetransmit, sequenceToRetransmit = self.send_buffer.resend(self.mss)
         self.send_packet(dataToRetransmit, sequenceToRetransmit)
         self.trace("%s (%d) retransmission timer fired" % (self.node.hostname,self.source_address))
@@ -171,6 +190,8 @@ class TCP(Connection):
         self.transport.send_packet(packet)
 
     def adjust_timeout(self,sample_rtt):
+        if self.proveTimer:
+            print "Received ACK with RTT of: " + str(sample_rtt)
         if not self.est_rtt:
             self.est_rtt = sample_rtt
         else:
@@ -179,7 +200,9 @@ class TCP(Connection):
             self.var_rtt = sample_rtt/2
         else:
             self.var_rtt = ((1 - self.beta) * self.var_rtt) + (self.beta * abs(sample_rtt - self.est_rtt))
+        before = self.timeout
 
         self.timeout = self.est_rtt + max(1.0, 4.0*self.var_rtt)
-
+        if self.proveTimer:
+            print "Timeout adjusted from " + str(before) + " to " + str(self.timeout)
 
