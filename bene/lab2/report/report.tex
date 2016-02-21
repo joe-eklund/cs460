@@ -69,13 +69,13 @@ The following numbers correspond to the step numbers shown in Figure \ref{diagra
   \includegraphics{diagram1}
 \end{figure}
 
-We added a dynamic retransmission timer that uses an exponetial weighted moving average (EWMA) for the timer value and the variance. We implemented our dynamic timer in tcp.py by creating a function called \texttt{adjust\textunderscore timeout(sample\textunderscore rtt)} which is invoked every time the server receives an ACK for un-ACKed data. We also modified \texttt{retransmit()} to double the timeout value when the function is invoked. This is in keeping with \href{http://www.ietf.org/rfc/rfc2988.txt}{RFC 2988}.
+We added a dynamic retransmission timer that uses an exponetial weighted moving average (EWMA) for the timer value and the variance. We implemented our dynamic timer in tcp.py by creating a function called \texttt{adjust\textunderscore timeout(sample\textunderscore rtt)} which is invoked every time the sender receives an ACK for un-ACKed data. We also modified \texttt{retransmit()} to double the timeout value when the function is invoked. This is in keeping with \href{http://www.ietf.org/rfc/rfc2988.txt}{RFC 2988}.
 
 \section{Test Results}
 
-After implementing reliable transport, we ran tests on two files called text.txt and internet-architecture.pdf. We wrote a script that copies the test files from one directory to another and then diffs them to verify that our implementation of TCP reliability functions correctly. 
+After implementing reliable transport, we ran tests on two files called test.txt and internet-architecture.pdf. We wrote a script that copies the test files from one directory to another and then diffs them to verify that our implementation of TCP reliability functions correctly. 
 
-For each file we tested loss rates ranging from 0.0 to 0.5 on both a fixed one second timer and dynamic retransmission timer. The dynamic timer uses an EWMA for the timer value and variance. For test.txt we recorded the average time it took to transfer the file over 1000 tests. For internet-architecture.pdf we averaged tranfer times over 100 tests. The results of these tests are shown in tables \ref{tbltest} and \ref{tblinternet}.
+For each file we tested loss rates ranging from 0.0 to 0.5 on both a fixed one second timer and dynamic retransmission timer. The dynamic timer uses an EWMA for the timer value and variance. For test.txt we recorded the average time it took to transfer the file over 1000 tests. For internet-architecture.pdf we averaged tranfer times over 100 tests. The results of these tests are shown in tables \ref{tbltest} and \ref{tblinternet} respectively.
 
 \begin{table}[H]
 \begin{center}
@@ -111,6 +111,8 @@ For each file we tested loss rates ranging from 0.0 to 0.5 on both a fixed one s
 \end{center}
 \end{table}
 
+Snippet \ref{retransOutput} shows trace output for the state of the dynamic retransmission timer while transmitting test.txt with a loss rate of 0.1.
+
 \begin{lstlisting}[caption={Dynamic retransmission output},label=retransOutput]
 Starting timer with timeout of: 3.0
 Received ACK with RTT of: 0.0208
@@ -133,9 +135,9 @@ Received ACK with RTT of: 0.0216
 Timeout adjusted from 1.02115449219 to 1.02121018066
 \end{lstlisting}
 
-As evidenced from the output above, the timeout converges from 3.0 seconds to about 1.02 seconds. This shows that the dynamic retransmission timer is in fact converging to the right value over time. Lines 7 and 8 of Snippet \ref{retransOutput} show that exponential backoff works as expected.
+As evidenced from Snippet \ref{retransOutput}, the timeout converges from 3.0 seconds to about 1.02 seconds. This shows that the dynamic retransmission timer is in fact converging to the right value over time. Lines 7 and 8 of Snippet \ref{retransOutput} show that exponential backoff works as expected.
 
-Tables \ref{tbltest} and \ref{tblinternet} show that with a loss rate of 0.0, both the fixed timer and dynamic timer transmit files in the same amount of time. This makes sense because we never have have to retransmit packets and the timer never expires. The transmission times are relatively short from the 0.0 to 0.2 loss rate range for both types of timers. However, the time it takes to transmit with a dynamic timer of a loss rate of 0.5 is untenable; the transmission of internet-architecture.pdf took 391,497,109.508 seconds (12.41 years) which is clearly unacceptable.
+Tables \ref{tbltest} and \ref{tblinternet} show that with a loss rate of 0.0, both the fixed timer and dynamic timer transmit files in the same amount of time. This makes sense because we never have to retransmit packets and the timer never expires. The transmission times are relatively short from the 0.0 to 0.2 loss rate range for both types of timers. However, the time it takes to transmit with a dynamic timer of a loss rate of 0.5 is untenable; the transmission of internet-architecture.pdf took 391,497,109.508 seconds (12.41 years) which is clearly unacceptable.
 
 \section{Experiments}
 
