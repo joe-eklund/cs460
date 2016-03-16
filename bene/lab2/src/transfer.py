@@ -26,22 +26,23 @@ class AppHandler(object):
 
 class Main(object):
     def __init__(self):
-        # iterations = 1
+        self.iterations = 1 #set from flags
         self.out_directory = '../output/received'
         self.in_directory = '../data'
         self.parse_options()
         print self.filename
         # self.total = 0.0;
-        # for i in range(0, iterations):
-        #     self.run()
-        for windowSize in [1000, 2000, 5000, 10000, 15000, 20000]:
-            # print "--Results with window size " + str(windowSize)
-            self.window = windowSize
+        for i in range(0, self.iterations):
             self.run()
+            self.diff()
+        # for windowSize in [1000]:#, 2000, 5000, 10000, 15000, 20000]:
+            # print "--Results with window size " + str(windowSize)
+            #self.window = windowSize
+            # self.run()
 
         # print "Average over " + str(iterations) + " iterations: " + str(self.total / float(iterations))
 
-        self.diff()
+        
 
     def parse_options(self):
         parser = optparse.OptionParser(usage = "%prog [options]",
@@ -59,10 +60,15 @@ class Main(object):
                           default=1000,
                           help="transmission window size")
 
+        parser.add_option("-i","--iterations",type="int",dest="iterations",
+                          default=1,
+                          help="number of iterations to run")
+
         (options,args) = parser.parse_args()
         self.filename = options.filename
         self.loss = options.loss
         self.window = options.window
+        self.iterations = options.iterations
 
     def diff(self):
         args = ['diff','-u',self.in_directory + '/' + self.filename,self.out_directory+'/'+self.filename]
@@ -74,12 +80,13 @@ class Main(object):
             print "File transfer failed. Here is the diff:"
             print
             print result
+            sys.exit()
 
     def run(self):
         # parameters
         Sim.scheduler.reset()
-        # Sim.set_debug('AppHandler')
-        # Sim.set_debug('TCP')
+        Sim.set_debug('AppHandler')
+        Sim.set_debug('TCP')
 
         # setup network
         net = Network('../networks/setup.txt')

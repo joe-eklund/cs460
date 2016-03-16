@@ -37,7 +37,7 @@ class Plotter:
 
         # plt.show()
         fig = ax.get_figure() 
-        fig.savefig('../report/queueing.png')
+        fig.savefig('../report/queueing1.png')
 
         # print range(0,5,.1)
         fig.savefig('line.png')

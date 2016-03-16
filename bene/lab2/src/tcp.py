@@ -76,6 +76,8 @@ class TCP(Connection):
         if self.output:
             print "received data of size:" + str(len(data))
         self.send_buffer.put(data)
+        if self.output:
+            print "The end of the send buffer is: " + str(self.send_buffer.last)
         self.send_max()
         
 
@@ -128,7 +130,8 @@ class TCP(Connection):
         if packet.ack_number > self.sequence:
 
             sample_rtt = Sim.scheduler.current_time() - packet.time_stamp
-            self.cancel_timer()
+            self.restart_timer()
+
             if self.dynamic:
                 self.adjust_timeout(sample_rtt)
 
@@ -136,6 +139,8 @@ class TCP(Connection):
             if self.output:
                 print "Handling Ack with an ack number of: " + str(packet.ack_number)
             if not self.send_buffer.slide(self.sequence):
+                if self.output:
+                    print "FINAL TIMER CANCELATION"
                 self.cancel_timer()
             if self.output:
                 print "After handling the ack, our buffer base is " + str(self.send_buffer.base) + " and next is " + str(self.send_buffer.next)
@@ -160,6 +165,10 @@ class TCP(Connection):
             return
         Sim.scheduler.cancel(self.timer)
         self.timer = None
+
+    def restart_timer(self):
+        self.cancel_timer()
+        self.timer = Sim.scheduler.add(delay=self.timeout, event='retransmit', handler=self.retransmit)
 
     ''' Receiver '''
 
