@@ -1,0 +1,1816 @@
+
+WT: Window: 1000  Threshold: 100000
+EI: setting window to 1000 += 1000 - 0
+
+WT: Window: 2000  Threshold: 100000
+EI: setting window to 2000 += 2000 - 1000
+
+WT: Window: 3000  Threshold: 100000
+EI: setting window to 3000 += 3000 - 2000
+
+WT: Window: 4000  Threshold: 100000
+EI: setting window to 4000 += 4000 - 3000
+
+WT: Window: 5000  Threshold: 100000
+EI: setting window to 5000 += 5000 - 4000
+
+WT: Window: 6000  Threshold: 100000
+EI: setting window to 6000 += 6000 - 5000
+
+WT: Window: 7000  Threshold: 100000
+EI: setting window to 7000 += 7000 - 6000
+
+WT: Window: 8000  Threshold: 100000
+EI: setting window to 8000 += 8000 - 7000
+
+WT: Window: 9000  Threshold: 100000
+EI: setting window to 9000 += 9000 - 8000
+
+WT: Window: 10000  Threshold: 100000
+EI: setting window to 10000 += 10000 - 9000
+
+WT: Window: 11000  Threshold: 100000
+EI: setting window to 11000 += 11000 - 10000
+
+WT: Window: 12000  Threshold: 100000
+EI: setting window to 12000 += 12000 - 11000
+
+WT: Window: 13000  Threshold: 100000
+EI: setting window to 13000 += 13000 - 12000
+
+WT: Window: 14000  Threshold: 100000
+EI: setting window to 14000 += 14000 - 13000
+
+WT: Window: 15000  Threshold: 100000
+EI: setting window to 15000 += 15000 - 14000
+
+WT: Window: 16000  Threshold: 100000
+EI: setting window to 16000 += 16000 - 15000
+
+WT: Window: 17000  Threshold: 100000
+EI: setting window to 17000 += 17000 - 16000
+
+WT: Window: 18000  Threshold: 100000
+EI: setting window to 18000 += 18000 - 17000
+
+WT: Window: 19000  Threshold: 100000
+EI: setting window to 19000 += 19000 - 18000
+
+WT: Window: 20000  Threshold: 100000
+EI: setting window to 20000 += 20000 - 19000
+
+WT: Window: 21000  Threshold: 100000
+EI: setting window to 21000 += 21000 - 20000
+
+WT: Window: 22000  Threshold: 100000
+EI: setting window to 22000 += 22000 - 21000
+
+WT: Window: 23000  Threshold: 100000
+EI: setting window to 23000 += 23000 - 22000
+
+WT: Window: 24000  Threshold: 100000
+EI: setting window to 24000 += 24000 - 23000
+
+WT: Window: 25000  Threshold: 100000
+EI: setting window to 25000 += 25000 - 24000
+
+WT: Window: 26000  Threshold: 100000
+EI: setting window to 26000 += 26000 - 25000
+
+WT: Window: 27000  Threshold: 100000
+EI: setting window to 27000 += 27000 - 26000
+
+WT: Window: 28000  Threshold: 100000
+EI: setting window to 28000 += 28000 - 27000
+
+WT: Window: 29000  Threshold: 100000
+EI: setting window to 29000 += 29000 - 28000
+
+WT: Window: 30000  Threshold: 100000
+EI: setting window to 30000 += 30000 - 29000
+
+WT: Window: 31000  Threshold: 100000
+EI: setting window to 31000 += 31000 - 30000
+
+WT: Window: 32000  Threshold: 100000
+EI: setting window to 32000 += 32000 - 31000
+
+WT: Window: 33000  Threshold: 100000
+EI: setting window to 33000 += 33000 - 32000
+
+WT: Window: 34000  Threshold: 100000
+EI: setting window to 34000 += 34000 - 33000
+
+WT: Window: 35000  Threshold: 100000
+EI: setting window to 35000 += 35000 - 34000
+
+WT: Window: 36000  Threshold: 100000
+EI: setting window to 36000 += 36000 - 35000
+
+WT: Window: 37000  Threshold: 100000
+EI: setting window to 37000 += 37000 - 36000
+
+WT: Window: 38000  Threshold: 100000
+EI: setting window to 38000 += 38000 - 37000
+
+WT: Window: 39000  Threshold: 100000
+EI: setting window to 39000 += 39000 - 38000
+
+WT: Window: 40000  Threshold: 100000
+EI: setting window to 40000 += 40000 - 39000
+
+WT: Window: 41000  Threshold: 100000
+EI: setting window to 41000 += 41000 - 40000
+
+WT: Window: 42000  Threshold: 100000
+EI: setting window to 42000 += 42000 - 41000
+
+WT: Window: 43000  Threshold: 100000
+EI: setting window to 43000 += 43000 - 42000
+
+WT: Window: 44000  Threshold: 100000
+EI: setting window to 44000 += 44000 - 43000
+
+WT: Window: 45000  Threshold: 100000
+EI: setting window to 45000 += 45000 - 44000
+
+WT: Window: 46000  Threshold: 100000
+EI: setting window to 46000 += 46000 - 45000
+
+WT: Window: 47000  Threshold: 100000
+EI: setting window to 47000 += 47000 - 46000
+
+WT: Window: 48000  Threshold: 100000
+EI: setting window to 48000 += 48000 - 47000
+
+WT: Window: 49000  Threshold: 100000
+EI: setting window to 49000 += 49000 - 48000
+
+WT: Window: 50000  Threshold: 100000
+EI: setting window to 50000 += 50000 - 49000
+
+WT: Window: 51000  Threshold: 100000
+EI: setting window to 51000 += 51000 - 50000
+
+WT: Window: 52000  Threshold: 100000
+EI: setting window to 52000 += 52000 - 51000
+
+WT: Window: 53000  Threshold: 100000
+EI: setting window to 53000 += 53000 - 52000
+
+WT: Window: 54000  Threshold: 100000
+EI: setting window to 54000 += 54000 - 53000
+
+WT: Window: 55000  Threshold: 100000
+EI: setting window to 55000 += 55000 - 54000
+
+WT: Window: 56000  Threshold: 100000
+EI: setting window to 56000 += 56000 - 55000
+
+WT: Window: 57000  Threshold: 100000
+EI: setting window to 57000 += 57000 - 56000
+
+WT: Window: 58000  Threshold: 100000
+EI: setting window to 58000 += 58000 - 57000
+
+WT: Window: 59000  Threshold: 100000
+EI: setting window to 59000 += 59000 - 58000
+
+WT: Window: 60000  Threshold: 100000
+EI: setting window to 60000 += 60000 - 59000
+
+WT: Window: 61000  Threshold: 100000
+EI: setting window to 61000 += 61000 - 60000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 3 duplicate ACKs
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+We have 1 duplicate of 61000
+
+WT: Window: 1000  Threshold: 31000
+EI: setting window to 1000 += 123000 - 61000
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 15
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 30
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 45
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 60
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 75
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 90
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 105
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 120
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 135
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 150
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 165
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 180
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 195
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 210
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 225
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 240
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 255
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 270
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 285
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 300
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 315
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 330
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 345
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 360
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 375
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 390
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 405
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 420
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 435
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 450
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 465
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 480
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 495
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 510
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 525
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 540
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 555
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 570
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 585
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 600
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 615
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 630
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 645
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 660
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 675
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 690
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 705
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 720
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 735
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 750
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 765
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 780
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 795
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 810
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 825
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 840
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 855
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 870
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 885
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 900
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 915
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 930
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 945
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 960
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 975
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 0
+AI: remaining inc_sum is 990
+
+WT: Window: 63000  Threshold: 31000
+AI: setting window to 63000 += 1000 * 1
+AI: remaining inc_sum is 5
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 20
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 35
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 50
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 65
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 80
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 95
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 110
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 125
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 140
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 155
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 170
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 185
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 200
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 215
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 230
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 245
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 260
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 275
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 290
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 305
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 320
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 335
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 350
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 365
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 380
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 395
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 410
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 425
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 440
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 455
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 470
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 485
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 500
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 515
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 530
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 545
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 560
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 575
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 590
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 605
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 620
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 635
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 650
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 665
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 680
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 695
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 710
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 725
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 740
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 755
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 770
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 785
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 800
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 815
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 830
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 845
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 860
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 875
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 890
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 905
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 920
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 935
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 950
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 965
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 980
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 0
+AI: remaining inc_sum is 995
+
+WT: Window: 64000  Threshold: 31000
+AI: setting window to 64000 += 1000 * 1
+AI: remaining inc_sum is 10
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 25
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 40
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 55
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 70
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 85
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 100
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 115
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 130
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 145
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 160
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 175
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 190
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 205
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 220
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 235
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 250
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 265
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 280
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 295
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 310
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 325
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 340
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 355
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 370
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 385
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 400
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 415
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 430
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 445
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 460
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 475
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 490
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 505
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 520
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 535
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 550
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 565
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 580
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 595
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 610
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 625
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 640
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 655
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 670
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 685
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 700
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 715
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 730
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 745
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 760
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 775
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 790
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 805
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 820
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 835
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 850
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 865
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 880
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 895
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 910
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 925
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 940
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 955
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 970
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 0
+AI: remaining inc_sum is 985
+
+WT: Window: 65000  Threshold: 31000
+AI: setting window to 65000 += 1000 * 1
+AI: remaining inc_sum is 0
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 15
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 30
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 45
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 60
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 75
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 90
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 105
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 120
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 135
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 150
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 165
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 180
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 195
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 210
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 225
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 240
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 255
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 270
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 285
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 300
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 315
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 330
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 345
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 360
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 375
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 390
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 405
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 420
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 435
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 450
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 465
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 480
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 495
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 510
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 525
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 540
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 555
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 570
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 585
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 600
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 615
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 630
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 645
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 660
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 675
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 690
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 705
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 720
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 735
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 750
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 765
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 780
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 795
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 810
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 825
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 840
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 855
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 870
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 885
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 900
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 915
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 930
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 945
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 960
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 975
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 0
+AI: remaining inc_sum is 990
+
+WT: Window: 66000  Threshold: 31000
+AI: setting window to 66000 += 1000 * 1
+AI: remaining inc_sum is 5
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 19
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 33
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 47
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 61
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 75
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 89
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 103
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 117
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 131
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 145
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 159
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 173
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 187
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 201
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 215
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 229
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 243
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 257
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 271
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 285
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 299
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 313
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 327
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 341
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 355
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 369
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 383
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 397
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 411
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 425
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 439
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 453
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 467
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 481
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 495
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 509
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 523
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 537
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 551
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 565
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 579
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 593
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 607
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 621
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 635
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 649
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 663
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 677
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 691
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 705
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 719
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 733
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 747
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 761
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 775
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 789
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 803
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 817
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 831
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 845
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 859
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 873
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 887
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 901
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 915
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 929
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 943
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 957
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 971
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 985
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 0
+AI: remaining inc_sum is 999
+
+WT: Window: 67000  Threshold: 31000
+AI: setting window to 67000 += 1000 * 1
+AI: remaining inc_sum is 13
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 27
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 41
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 55
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 69
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 83
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 97
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 111
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 125
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 139
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 153
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 167
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 181
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 195
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 209
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 223
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 237
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 251
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 265
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 279
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 293
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 307
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 321
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 335
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 349
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 363
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 377
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 391
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 405
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 419
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 433
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 447
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 461
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 475
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 489
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 503
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 517
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 531
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 545
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 559
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 573
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 587
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 601
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 615
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 629
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 643
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 657
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 671
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 685
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 699
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 713
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 727
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 741
+
+WT: Window: 68000  Threshold: 31000
+AI: setting window to 68000 += 1000 * 0
+AI: remaining inc_sum is 748

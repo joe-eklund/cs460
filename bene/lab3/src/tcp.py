@@ -33,6 +33,9 @@ class TCP(Connection):
         # for fast retransmit
         self.last_ack = 0
         self.dup_counter = 0
+        # self.drop_next = False
+        # self.has_dropped = False
+        # self.dropped_count = 0
         # send buffer
         self.send_buffer = SendBuffer()
         ############################################# (this never gets adjusted)
@@ -123,7 +126,14 @@ class TCP(Connection):
             self.trace("%s (%d) sending TCP segment to %d for %d" % (self.node.hostname,self.source_address,self.destination_address,packet.sequence))
         if self.seq_plot:
             self.trace("%d T" % (packet.sequence))
-        self.transport.send_packet(packet)
+        # if not self.drop_next or self.dropped_count >= 3:
+        #     print "# " + str(self.window)
+        #     self.transport.send_packet(packet)
+        # else:
+        #     self.dropped_count += 1
+        #     self.trace("%d X" % (sequence))
+        #     print "# Dropped packet with sequence number: " + str(sequence)
+            # self.drop_next += 1
         self.totalPacketsSent += 1
         # Step 4
         # set a timer
@@ -169,7 +179,7 @@ class TCP(Connection):
             if self.window < self.thresh:   # exponential increase
                 if self.proveCong:
                     print "EI: setting window to " + str(self.window) + " += " + str(packet.ack_number) + " - " + str(self.sequence)
-                self.window += newBytes
+                self.window += self.mss
             else:                           # additive increase
                 #"""
                 self.inc_sum += (self.mss * newBytes) / self.window     # gather increase until > mss
@@ -181,6 +191,9 @@ class TCP(Connection):
                 self.window += self.mss * mss_count                     # adjust window
                 #"""
                 # self.window += (self.mss * newBytes) / self.window
+            # if self.window == 28000:
+            #     self.drop_next = True
+
 
             # normal ack handling
             self.sequence = packet.ack_number
@@ -210,7 +223,7 @@ class TCP(Connection):
 
         # actually retransmit
         dataToRetransmit, sequenceToRetransmit = self.send_buffer.resend(self.mss)
-        
+
         if self.seq_plot:
             self.trace("%d X" % (sequenceToRetransmit))
 
