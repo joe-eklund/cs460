@@ -126,6 +126,8 @@ class TCP(Connection):
             self.trace("%s (%d) sending TCP segment to %d for %d" % (self.node.hostname,self.source_address,self.destination_address,packet.sequence))
         if self.seq_plot:
             self.trace("%d T" % (packet.sequence))
+
+        # == UNCOMMENT THIS FOR DROPPING 3 PACKETS (as well as the code around line 215)
         # if not self.drop_next or self.dropped_count >= 3:
         #     print "# " + str(self.window)
         #     self.transport.send_packet(packet)
@@ -134,13 +136,18 @@ class TCP(Connection):
         #     self.trace("%d X" % (sequence))
         #     print "# Dropped packet with sequence number: " + str(sequence)
         #     self.drop_next += 1
-        if sequence != 61000 or self.has_dropped:
-            print "# " + str(self.window)
-            self.transport.send_packet(packet)
-        else:
-            self.trace("%d X" % (sequence))
-            print "# Dropped packet with sequence number: " + str(sequence)
-            self.has_dropped = True
+
+        # == UNCOMMENT THIS FOR DROPPING 1 PACKET
+        # if sequence != 61000 or self.has_dropped:
+        #     print "# " + str(self.window)
+        #     self.transport.send_packet(packet)
+        # else:
+        #     self.trace("%d X" % (sequence))
+        #     print "# Dropped packet with sequence number: " + str(sequence)
+        #     self.has_dropped = True
+
+        # == UNCOMMENT THIS FOR NO DELIBERATE PACKET DROPPING
+        self.transport.send_packet(packet)
 
         self.totalPacketsSent += 1
         # Step 4
@@ -199,11 +206,9 @@ class TCP(Connection):
                 if self.proveCong:
                     print "AI: setting window to " + str(self.window) + " += " + str(self.mss) + " * " + str(mss_count)
                     print "AI: remaining inc_sum is " + str(self.inc_sum)
-                # if self.seq_plot and mss_count > 0:
-                #     self.trace("%d A" % (packet.ack_number))
                 self.window += self.mss * mss_count                     # adjust window
-                #"""
-                # self.window += (self.mss * newBytes) / self.window
+
+            # == UNCOMMENT THIS FOR DROPPING 3 PACKETS (as well as the code around line 130)
             # if self.window == 28000:
             #     self.drop_next = True
 
