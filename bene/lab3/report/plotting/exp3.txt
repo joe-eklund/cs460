@@ -1,3335 +1,1610 @@
 0 0 T
 # 1000
-0.0208 1000 A
-
-WT: Window: 1000  Threshold: 100000
-EI: setting window to 1000 += 1000 - 0
-0.0208 1000 T
+0.0408 1000 A
+0.0408 1000 T
 # 2000
-0.0208 2000 T
+0.0408 2000 T
 # 2000
-0.0416 2000 A
-
-WT: Window: 2000  Threshold: 100000
-EI: setting window to 2000 += 2000 - 1000
-0.0416 3000 T
+0.0816 2000 A
+0.0816 3000 T
 # 3000
-0.0416 4000 T
+0.0816 4000 T
 # 3000
-0.0424 3000 A
-
-WT: Window: 3000  Threshold: 100000
-EI: setting window to 3000 += 3000 - 2000
-0.0424 5000 T
+0.0824 3000 A
+0.0824 5000 T
 # 4000
-0.0424 6000 T
+0.0824 6000 T
 # 4000
-0.0624 4000 A
-
-WT: Window: 4000  Threshold: 100000
-EI: setting window to 4000 += 4000 - 3000
-0.0624 7000 T
+0.1224 4000 A
+0.1224 7000 T
 # 5000
-0.0624 8000 T
+0.1224 8000 T
 # 5000
-0.0632 5000 A
-
-WT: Window: 5000  Threshold: 100000
-EI: setting window to 5000 += 5000 - 4000
-0.0632 9000 T
+0.1232 5000 A
+0.1232 9000 T
 # 6000
-0.0632 10000 T
+0.1232 10000 T
 # 6000
-0.064 6000 A
-
-WT: Window: 6000  Threshold: 100000
-EI: setting window to 6000 += 6000 - 5000
-0.064 11000 T
+0.124 6000 A
+0.124 11000 T
 # 7000
-0.064 12000 T
+0.124 12000 T
 # 7000
-0.0648 7000 A
-
-WT: Window: 7000  Threshold: 100000
-EI: setting window to 7000 += 7000 - 6000
-0.0648 13000 T
+0.1248 7000 A
+0.1248 13000 T
 # 8000
-0.0648 14000 T
+0.1248 14000 T
 # 8000
-0.0832 8000 A
-
-WT: Window: 8000  Threshold: 100000
-EI: setting window to 8000 += 8000 - 7000
-0.0832 15000 T
+0.1632 8000 A
+0.1632 15000 T
 # 9000
-0.0832 16000 T
+0.1632 16000 T
 # 9000
-0.084 9000 A
-
-WT: Window: 9000  Threshold: 100000
-EI: setting window to 9000 += 9000 - 8000
-0.084 17000 T
+0.164 9000 A
+0.164 17000 T
 # 10000
-0.084 18000 T
+0.164 18000 T
 # 10000
-0.0848 10000 A
-
-WT: Window: 10000  Threshold: 100000
-EI: setting window to 10000 += 10000 - 9000
-0.0848 19000 T
+0.1648 10000 A
+0.1648 19000 T
 # 11000
-0.0848 20000 T
+0.1648 20000 T
 # 11000
-0.0856 11000 A
-
-WT: Window: 11000  Threshold: 100000
-EI: setting window to 11000 += 11000 - 10000
-0.0856 21000 T
+0.1656 11000 A
+0.1656 21000 T
 # 12000
-0.0856 22000 T
+0.1656 22000 T
 # 12000
-0.0864 12000 A
-
-WT: Window: 12000  Threshold: 100000
-EI: setting window to 12000 += 12000 - 11000
-0.0864 23000 T
+0.1664 12000 A
+0.1664 23000 T
 # 13000
-0.0864 24000 T
+0.1664 24000 T
 # 13000
-0.0872 13000 A
-
-WT: Window: 13000  Threshold: 100000
-EI: setting window to 13000 += 13000 - 12000
-0.0872 25000 T
+0.1672 13000 A
+0.1672 25000 T
 # 14000
-0.0872 26000 T
+0.1672 26000 T
 # 14000
-0.088 14000 A
-
-WT: Window: 14000  Threshold: 100000
-EI: setting window to 14000 += 14000 - 13000
-0.088 27000 T
+0.168 14000 A
+0.168 27000 T
 # 15000
-0.088 28000 T
+0.168 28000 T
 # 15000
-0.0888 15000 A
-
-WT: Window: 15000  Threshold: 100000
-EI: setting window to 15000 += 15000 - 14000
-0.0888 29000 T
+0.1688 15000 A
+0.1688 29000 T
 # 16000
-0.0888 30000 T
+0.1688 30000 T
 # 16000
-0.104 16000 A
-
-WT: Window: 16000  Threshold: 100000
-EI: setting window to 16000 += 16000 - 15000
-0.104 31000 T
+0.204 16000 A
+0.204 31000 T
 # 17000
-0.104 32000 T
+0.204 32000 T
 # 17000
-0.1048 17000 A
-
-WT: Window: 17000  Threshold: 100000
-EI: setting window to 17000 += 17000 - 16000
-0.1048 33000 T
+0.2048 17000 A
+0.2048 33000 T
 # 18000
-0.1048 34000 T
+0.2048 34000 T
 # 18000
-0.1056 18000 A
-
-WT: Window: 18000  Threshold: 100000
-EI: setting window to 18000 += 18000 - 17000
-0.1056 35000 T
+0.2056 18000 A
+0.2056 35000 T
 # 19000
-0.1056 36000 T
+0.2056 36000 T
 # 19000
-0.1064 19000 A
-
-WT: Window: 19000  Threshold: 100000
-EI: setting window to 19000 += 19000 - 18000
-0.1064 37000 T
+0.2064 19000 A
+0.2064 37000 T
 # 20000
-0.1064 38000 T
+0.2064 38000 T
 # 20000
-0.1072 20000 A
-
-WT: Window: 20000  Threshold: 100000
-EI: setting window to 20000 += 20000 - 19000
-0.1072 39000 T
+0.2072 20000 A
+0.2072 39000 T
 # 21000
-0.1072 40000 T
+0.2072 40000 T
 # 21000
-0.108 21000 A
-
-WT: Window: 21000  Threshold: 100000
-EI: setting window to 21000 += 21000 - 20000
-0.108 41000 T
+0.208 21000 A
+0.208 41000 T
 # 22000
-0.108 42000 T
+0.208 42000 T
 # 22000
-0.1088 22000 A
-
-WT: Window: 22000  Threshold: 100000
-EI: setting window to 22000 += 22000 - 21000
-0.1088 43000 T
+0.2088 22000 A
+0.2088 43000 T
 # 23000
-0.1088 44000 T
+0.2088 44000 T
 # 23000
-0.1096 23000 A
-
-WT: Window: 23000  Threshold: 100000
-EI: setting window to 23000 += 23000 - 22000
-0.1096 45000 T
+0.2096 23000 A
+0.2096 45000 T
 # 24000
-0.1096 46000 T
+0.2096 46000 T
 # 24000
-0.1104 24000 A
-
-WT: Window: 24000  Threshold: 100000
-EI: setting window to 24000 += 24000 - 23000
-0.1104 47000 T
+0.2104 24000 A
+0.2104 47000 T
 # 25000
-0.1104 48000 T
+0.2104 48000 T
 # 25000
-0.1112 25000 A
-
-WT: Window: 25000  Threshold: 100000
-EI: setting window to 25000 += 25000 - 24000
-0.1112 49000 T
+0.2112 25000 A
+0.2112 49000 T
 # 26000
-0.1112 50000 T
+0.2112 50000 T
 # 26000
-0.112 26000 A
-
-WT: Window: 26000  Threshold: 100000
-EI: setting window to 26000 += 26000 - 25000
-0.112 51000 T
+0.212 26000 A
+0.212 51000 T
 # 27000
-0.112 52000 T
+0.212 52000 T
 # 27000
-0.1128 27000 A
-
-WT: Window: 27000  Threshold: 100000
-EI: setting window to 27000 += 27000 - 26000
-0.1128 53000 T
+0.2128 27000 A
+0.2128 53000 T
 # 28000
-0.1128 54000 T
+0.2128 54000 T
 # 28000
-0.1136 28000 A
-
-WT: Window: 28000  Threshold: 100000
-EI: setting window to 28000 += 28000 - 27000
-0.1136 55000 T
+0.2136 28000 A
+0.2136 55000 T
 # 29000
-0.1136 56000 T
+0.2136 56000 T
 # 29000
-0.1144 29000 A
-
-WT: Window: 29000  Threshold: 100000
-EI: setting window to 29000 += 29000 - 28000
-0.1144 57000 T
+0.2144 29000 A
+0.2144 57000 T
 # 30000
-0.1144 58000 T
+0.2144 58000 T
 # 30000
-0.1152 30000 A
-
-WT: Window: 30000  Threshold: 100000
-EI: setting window to 30000 += 30000 - 29000
-0.1152 59000 T
+0.2152 30000 A
+0.2152 59000 T
 # 31000
-0.1152 60000 T
+0.2152 60000 T
 # 31000
-0.116 31000 A
-
-WT: Window: 31000  Threshold: 100000
-EI: setting window to 31000 += 31000 - 30000
-0.116 61000 T
+0.216 31000 A
+0.216 61000 T
+0.216 61000 X
 # Dropped packet with sequence number: 61000
-0.116 62000 T
+0.216 62000 T
 # 32000
-0.1248 32000 A
-
-WT: Window: 32000  Threshold: 100000
-EI: setting window to 32000 += 32000 - 31000
-0.1248 63000 T
+0.2448 32000 A
+0.2448 63000 T
 # 33000
-0.1248 64000 T
+0.2448 64000 T
 # 33000
-0.1256 33000 A
-
-WT: Window: 33000  Threshold: 100000
-EI: setting window to 33000 += 33000 - 32000
-0.1256 65000 T
+0.2456 33000 A
+0.2456 65000 T
 # 34000
-0.1256 66000 T
+0.2456 66000 T
 # 34000
-0.1264 34000 A
-
-WT: Window: 34000  Threshold: 100000
-EI: setting window to 34000 += 34000 - 33000
-0.1264 67000 T
+0.2464 34000 A
+0.2464 67000 T
 # 35000
-0.1264 68000 T
+0.2464 68000 T
 # 35000
-0.1272 35000 A
-
-WT: Window: 35000  Threshold: 100000
-EI: setting window to 35000 += 35000 - 34000
-0.1272 69000 T
+0.2472 35000 A
+0.2472 69000 T
 # 36000
-0.1272 70000 T
+0.2472 70000 T
 # 36000
-0.128 36000 A
-
-WT: Window: 36000  Threshold: 100000
-EI: setting window to 36000 += 36000 - 35000
-0.128 71000 T
+0.248 36000 A
+0.248 71000 T
 # 37000
-0.128 72000 T
+0.248 72000 T
 # 37000
-0.1288 37000 A
-
-WT: Window: 37000  Threshold: 100000
-EI: setting window to 37000 += 37000 - 36000
-0.1288 73000 T
+0.2488 37000 A
+0.2488 73000 T
 # 38000
-0.1288 74000 T
+0.2488 74000 T
 # 38000
-0.1296 38000 A
-
-WT: Window: 38000  Threshold: 100000
-EI: setting window to 38000 += 38000 - 37000
-0.1296 75000 T
+0.2496 38000 A
+0.2496 75000 T
 # 39000
-0.1296 76000 T
+0.2496 76000 T
 # 39000
-0.1304 39000 A
-
-WT: Window: 39000  Threshold: 100000
-EI: setting window to 39000 += 39000 - 38000
-0.1304 77000 T
+0.2504 39000 A
+0.2504 77000 T
 # 40000
-0.1304 78000 T
+0.2504 78000 T
 # 40000
-0.1312 40000 A
-
-WT: Window: 40000  Threshold: 100000
-EI: setting window to 40000 += 40000 - 39000
-0.1312 79000 T
+0.2512 40000 A
+0.2512 79000 T
 # 41000
-0.1312 80000 T
+0.2512 80000 T
 # 41000
-0.132 41000 A
-
-WT: Window: 41000  Threshold: 100000
-EI: setting window to 41000 += 41000 - 40000
-0.132 81000 T
+0.252 41000 A
+0.252 81000 T
 # 42000
-0.132 82000 T
+0.252 82000 T
 # 42000
-0.1328 42000 A
-
-WT: Window: 42000  Threshold: 100000
-EI: setting window to 42000 += 42000 - 41000
-0.1328 83000 T
+0.2528 42000 A
+0.2528 83000 T
 # 43000
-0.1328 84000 T
+0.2528 84000 T
 # 43000
-0.1336 43000 A
-
-WT: Window: 43000  Threshold: 100000
-EI: setting window to 43000 += 43000 - 42000
-0.1336 85000 T
+0.2536 43000 A
+0.2536 85000 T
 # 44000
-0.1336 86000 T
+0.2536 86000 T
 # 44000
-0.1344 44000 A
-
-WT: Window: 44000  Threshold: 100000
-EI: setting window to 44000 += 44000 - 43000
-0.1344 87000 T
+0.2544 44000 A
+0.2544 87000 T
 # 45000
-0.1344 88000 T
+0.2544 88000 T
 # 45000
-0.1352 45000 A
-
-WT: Window: 45000  Threshold: 100000
-EI: setting window to 45000 += 45000 - 44000
-0.1352 89000 T
+0.2552 45000 A
+0.2552 89000 T
 # 46000
-0.1352 90000 T
+0.2552 90000 T
 # 46000
-0.136 46000 A
-
-WT: Window: 46000  Threshold: 100000
-EI: setting window to 46000 += 46000 - 45000
-0.136 91000 T
+0.256 46000 A
+0.256 91000 T
 # 47000
-0.136 92000 T
+0.256 92000 T
 # 47000
-0.1368 47000 A
-
-WT: Window: 47000  Threshold: 100000
-EI: setting window to 47000 += 47000 - 46000
-0.1368 93000 T
+0.2568 47000 A
+0.2568 93000 T
 # 48000
-0.1368 94000 T
+0.2568 94000 T
 # 48000
-0.1376 48000 A
-
-WT: Window: 48000  Threshold: 100000
-EI: setting window to 48000 += 48000 - 47000
-0.1376 95000 T
+0.2576 48000 A
+0.2576 95000 T
 # 49000
-0.1376 96000 T
+0.2576 96000 T
 # 49000
-0.1384 49000 A
-
-WT: Window: 49000  Threshold: 100000
-EI: setting window to 49000 += 49000 - 48000
-0.1384 97000 T
+0.2584 49000 A
+0.2584 97000 T
 # 50000
-0.1384 98000 T
+0.2584 98000 T
 # 50000
-0.1392 50000 A
-
-WT: Window: 50000  Threshold: 100000
-EI: setting window to 50000 += 50000 - 49000
-0.1392 99000 T
+0.2592 50000 A
+0.2592 99000 T
 # 51000
-0.1392 100000 T
+0.2592 100000 T
 # 51000
-0.14 51000 A
-
-WT: Window: 51000  Threshold: 100000
-EI: setting window to 51000 += 51000 - 50000
-0.14 101000 T
+0.26 51000 A
+0.26 101000 T
 # 52000
-0.14 102000 T
+0.26 102000 T
 # 52000
-0.1408 52000 A
-
-WT: Window: 52000  Threshold: 100000
-EI: setting window to 52000 += 52000 - 51000
-0.1408 103000 T
+0.2608 52000 A
+0.2608 103000 T
 # 53000
-0.1408 104000 T
+0.2608 104000 T
 # 53000
-0.1416 53000 A
-
-WT: Window: 53000  Threshold: 100000
-EI: setting window to 53000 += 53000 - 52000
-0.1416 105000 T
+0.2616 53000 A
+0.2616 105000 T
 # 54000
-0.1416 106000 T
+0.2616 106000 T
 # 54000
-0.1424 54000 A
-
-WT: Window: 54000  Threshold: 100000
-EI: setting window to 54000 += 54000 - 53000
-0.1424 107000 T
+0.2624 54000 A
+0.2624 107000 T
 # 55000
-0.1424 108000 T
+0.2624 108000 T
 # 55000
-0.1432 55000 A
-
-WT: Window: 55000  Threshold: 100000
-EI: setting window to 55000 += 55000 - 54000
-0.1432 109000 T
+0.2632 55000 A
+0.2632 109000 T
 # 56000
-0.1432 110000 T
+0.2632 110000 T
 # 56000
-0.144 56000 A
-
-WT: Window: 56000  Threshold: 100000
-EI: setting window to 56000 += 56000 - 55000
-0.144 111000 T
+0.264 56000 A
+0.264 111000 T
 # 57000
-0.144 112000 T
+0.264 112000 T
 # 57000
-0.1448 57000 A
-
-WT: Window: 57000  Threshold: 100000
-EI: setting window to 57000 += 57000 - 56000
-0.1448 113000 T
+0.2648 57000 A
+0.2648 113000 T
 # 58000
-0.1448 114000 T
+0.2648 114000 T
 # 58000
-0.1456 58000 A
-
-WT: Window: 58000  Threshold: 100000
-EI: setting window to 58000 += 58000 - 57000
-0.1456 115000 T
+0.2656 58000 A
+0.2656 115000 T
 # 59000
-0.1456 116000 T
+0.2656 116000 T
 # 59000
-0.1464 59000 A
-
-WT: Window: 59000  Threshold: 100000
-EI: setting window to 59000 += 59000 - 58000
-0.1464 117000 T
+0.2664 59000 A
+0.2664 117000 T
 # 60000
-0.1464 118000 T
+0.2664 118000 T
 # 60000
-0.1472 60000 A
-
-WT: Window: 60000  Threshold: 100000
-EI: setting window to 60000 += 60000 - 59000
-0.1472 119000 T
+0.2672 60000 A
+0.2672 119000 T
 # 61000
-0.1472 120000 T
+0.2672 120000 T
 # 61000
-0.148 61000 A
-
-WT: Window: 61000  Threshold: 100000
-EI: setting window to 61000 += 61000 - 60000
-0.148 121000 T
+0.268 61000 A
+0.268 121000 T
 # 62000
-0.148 122000 T
+0.268 122000 T
 # 62000
-0.1488 61000 A
-We have 1 duplicate of 61000
-0.1496 61000 A
-We have 1 duplicate of 61000
-0.1504 61000 A
-We have 1 duplicate of 61000
-We have 3 duplicate ACKs
-0.1504 61000 X
-0.1504 61000 T
+0.2688 61000 A
+0.2688 61000 A
+0.2856 61000 A
+0.2856 61000 A
+0.2864 61000 A
+0.2864 61000 A
+0.2864 61000 X
+0.2864 61000 T
 # 1000
-0.1512 61000 A
-We have 1 duplicate of 61000
-0.152 61000 A
-We have 1 duplicate of 61000
-0.1528 61000 A
-We have 1 duplicate of 61000
-0.1536 61000 A
-We have 1 duplicate of 61000
-0.1544 61000 A
-We have 1 duplicate of 61000
-0.1552 61000 A
-We have 1 duplicate of 61000
-0.156 61000 A
-We have 1 duplicate of 61000
-0.1568 61000 A
-We have 1 duplicate of 61000
-0.1576 61000 A
-We have 1 duplicate of 61000
-0.1584 61000 A
-We have 1 duplicate of 61000
-0.1592 61000 A
-We have 1 duplicate of 61000
-0.16 61000 A
-We have 1 duplicate of 61000
-0.1608 61000 A
-We have 1 duplicate of 61000
-0.1616 61000 A
-We have 1 duplicate of 61000
-0.1624 61000 A
-We have 1 duplicate of 61000
-0.1632 61000 A
-We have 1 duplicate of 61000
-0.164 61000 A
-We have 1 duplicate of 61000
-0.1648 61000 A
-We have 1 duplicate of 61000
-0.1656 61000 A
-We have 1 duplicate of 61000
-0.1664 61000 A
-We have 1 duplicate of 61000
-0.1672 61000 A
-We have 1 duplicate of 61000
-0.168 61000 A
-We have 1 duplicate of 61000
-0.1688 61000 A
-We have 1 duplicate of 61000
-0.1696 61000 A
-We have 1 duplicate of 61000
-0.1704 61000 A
-We have 1 duplicate of 61000
-0.1712 61000 A
-We have 1 duplicate of 61000
-0.172 61000 A
-We have 1 duplicate of 61000
-0.1728 61000 A
-We have 1 duplicate of 61000
-0.1736 61000 A
-We have 1 duplicate of 61000
-0.1744 61000 A
-We have 1 duplicate of 61000
-0.1752 61000 A
-We have 1 duplicate of 61000
-0.176 61000 A
-We have 1 duplicate of 61000
-0.1768 61000 A
-We have 1 duplicate of 61000
-0.1776 61000 A
-We have 1 duplicate of 61000
-0.1784 61000 A
-We have 1 duplicate of 61000
-0.1792 61000 A
-We have 1 duplicate of 61000
-0.18 61000 A
-We have 1 duplicate of 61000
-0.1808 61000 A
-We have 1 duplicate of 61000
-0.1816 61000 A
-We have 1 duplicate of 61000
-0.1824 61000 A
-We have 1 duplicate of 61000
-0.1832 61000 A
-We have 1 duplicate of 61000
-0.184 61000 A
-We have 1 duplicate of 61000
-0.1848 61000 A
-We have 1 duplicate of 61000
-0.1856 61000 A
-We have 1 duplicate of 61000
-0.1864 61000 A
-We have 1 duplicate of 61000
-0.1872 61000 A
-We have 1 duplicate of 61000
-0.188 61000 A
-We have 1 duplicate of 61000
-0.1888 61000 A
-We have 1 duplicate of 61000
-0.1896 61000 A
-We have 1 duplicate of 61000
-0.1904 61000 A
-We have 1 duplicate of 61000
-0.1912 61000 A
-We have 1 duplicate of 61000
-0.192 61000 A
-We have 1 duplicate of 61000
-0.1928 61000 A
-We have 1 duplicate of 61000
-0.1936 61000 A
-We have 1 duplicate of 61000
-0.1944 61000 A
-We have 1 duplicate of 61000
-0.1952 61000 A
-We have 1 duplicate of 61000
-0.196 61000 A
-We have 1 duplicate of 61000
-0.1968 61000 A
-We have 1 duplicate of 61000
-0.1976 123000 A
-
-WT: Window: 1000  Threshold: 31000
-EI: setting window to 1000 += 123000 - 61000
-0.1976 123000 T
+0.2872 61000 A
+0.2872 61000 A
+0.288 61000 A
+0.288 61000 A
+0.2888 61000 A
+0.2888 61000 A
+0.2896 61000 A
+0.2896 61000 A
+0.2904 61000 A
+0.2904 61000 A
+0.2912 61000 A
+0.2912 61000 A
+0.292 61000 A
+0.292 61000 A
+0.2928 61000 A
+0.2928 61000 A
+0.2936 61000 A
+0.2936 61000 A
+0.2944 61000 A
+0.2944 61000 A
+0.2952 61000 A
+0.2952 61000 A
+0.296 61000 A
+0.296 61000 A
+0.2968 61000 A
+0.2968 61000 A
+0.2976 61000 A
+0.2976 61000 A
+0.2984 61000 A
+0.2984 61000 A
+0.2992 61000 A
+0.2992 61000 A
+0.3 61000 A
+0.3 61000 A
+0.3008 61000 A
+0.3008 61000 A
+0.3016 61000 A
+0.3016 61000 A
+0.3024 61000 A
+0.3024 61000 A
+0.3032 61000 A
+0.3032 61000 A
+0.304 61000 A
+0.304 61000 A
+0.3048 61000 A
+0.3048 61000 A
+0.3056 61000 A
+0.3056 61000 A
+0.3064 61000 A
+0.3064 61000 A
+0.3072 61000 A
+0.3072 61000 A
+0.308 61000 A
+0.308 61000 A
+0.3088 61000 A
+0.3088 61000 A
+0.3096 61000 A
+0.3096 61000 A
+0.3104 61000 A
+0.3104 61000 A
+0.3112 61000 A
+0.3112 61000 A
+0.312 61000 A
+0.312 61000 A
+0.3128 61000 A
+0.3128 61000 A
+0.3136 61000 A
+0.3136 61000 A
+0.3144 61000 A
+0.3144 61000 A
+0.3152 61000 A
+0.3152 61000 A
+0.316 61000 A
+0.316 61000 A
+0.3168 61000 A
+0.3168 61000 A
+0.3176 61000 A
+0.3176 61000 A
+0.3184 61000 A
+0.3184 61000 A
+0.3192 61000 A
+0.3192 61000 A
+0.32 61000 A
+0.32 61000 A
+0.3208 61000 A
+0.3208 61000 A
+0.3216 61000 A
+0.3216 61000 A
+0.3224 61000 A
+0.3224 61000 A
+0.3232 61000 A
+0.3232 61000 A
+0.324 61000 A
+0.324 61000 A
+0.3248 61000 A
+0.3248 61000 A
+0.3256 61000 A
+0.3256 61000 A
+0.3264 61000 A
+0.3264 61000 A
+0.3272 61000 A
+0.3272 61000 A
+0.328 61000 A
+0.328 61000 A
+0.3288 61000 A
+0.3288 61000 A
+0.3296 61000 A
+0.3296 61000 A
+0.3304 61000 A
+0.3304 61000 A
+0.3312 61000 A
+0.3312 61000 A
+0.332 61000 A
+0.332 61000 A
+0.3328 61000 A
+0.3328 61000 A
+0.3336 123000 A
+0.3336 123000 T
 # 2000
-0.1976 124000 T
+0.3336 124000 T
 # 2000
-0.2184 124000 A
-
-WT: Window: 2000  Threshold: 31000
-EI: setting window to 2000 += 124000 - 123000
-0.2184 125000 T
+0.3744 124000 A
+0.3744 125000 T
 # 3000
-0.2184 126000 T
+0.3744 126000 T
 # 3000
-0.2192 125000 A
-
-WT: Window: 3000  Threshold: 31000
-EI: setting window to 3000 += 125000 - 124000
-0.2192 127000 T
+0.3752 125000 A
+0.3752 127000 T
 # 4000
-0.2192 128000 T
+0.3752 128000 T
 # 4000
-0.2392 126000 A
-
-WT: Window: 4000  Threshold: 31000
-EI: setting window to 4000 += 126000 - 125000
-0.2392 129000 T
+0.4152 126000 A
+0.4152 129000 T
 # 5000
-0.2392 130000 T
+0.4152 130000 T
 # 5000
-0.24 127000 A
-
-WT: Window: 5000  Threshold: 31000
-EI: setting window to 5000 += 127000 - 126000
-0.24 131000 T
+0.416 127000 A
+0.416 131000 T
 # 6000
-0.24 132000 T
+0.416 132000 T
 # 6000
-0.2408 128000 A
-
-WT: Window: 6000  Threshold: 31000
-EI: setting window to 6000 += 128000 - 127000
-0.2408 133000 T
+0.4168 128000 A
+0.4168 133000 T
 # 7000
-0.2408 134000 T
+0.4168 134000 T
 # 7000
-0.2416 129000 A
-
-WT: Window: 7000  Threshold: 31000
-EI: setting window to 7000 += 129000 - 128000
-0.2416 135000 T
+0.4176 129000 A
+0.4176 135000 T
 # 8000
-0.2416 136000 T
+0.4176 136000 T
 # 8000
-0.26 130000 A
-
-WT: Window: 8000  Threshold: 31000
-EI: setting window to 8000 += 130000 - 129000
-0.26 137000 T
+0.456 130000 A
+0.456 137000 T
 # 9000
-0.26 138000 T
+0.456 138000 T
 # 9000
-0.2608 131000 A
-
-WT: Window: 9000  Threshold: 31000
-EI: setting window to 9000 += 131000 - 130000
-0.2608 139000 T
+0.4568 131000 A
+0.4568 139000 T
 # 10000
-0.2608 140000 T
+0.4568 140000 T
 # 10000
-0.2616 132000 A
-
-WT: Window: 10000  Threshold: 31000
-EI: setting window to 10000 += 132000 - 131000
-0.2616 141000 T
+0.4576 132000 A
+0.4576 141000 T
 # 11000
-0.2616 142000 T
+0.4576 142000 T
 # 11000
-0.2624 133000 A
-
-WT: Window: 11000  Threshold: 31000
-EI: setting window to 11000 += 133000 - 132000
-0.2624 143000 T
+0.4584 133000 A
+0.4584 143000 T
 # 12000
-0.2624 144000 T
+0.4584 144000 T
 # 12000
-0.2632 134000 A
-
-WT: Window: 12000  Threshold: 31000
-EI: setting window to 12000 += 134000 - 133000
-0.2632 145000 T
+0.4592 134000 A
+0.4592 145000 T
 # 13000
-0.2632 146000 T
+0.4592 146000 T
 # 13000
-0.264 135000 A
-
-WT: Window: 13000  Threshold: 31000
-EI: setting window to 13000 += 135000 - 134000
-0.264 147000 T
+0.46 135000 A
+0.46 147000 T
 # 14000
-0.264 148000 T
+0.46 148000 T
 # 14000
-0.2648 136000 A
-
-WT: Window: 14000  Threshold: 31000
-EI: setting window to 14000 += 136000 - 135000
-0.2648 149000 T
+0.4608 136000 A
+0.4608 149000 T
 # 15000
-0.2648 150000 T
+0.4608 150000 T
 # 15000
-0.2656 137000 A
-
-WT: Window: 15000  Threshold: 31000
-EI: setting window to 15000 += 137000 - 136000
-0.2656 151000 T
+0.4616 137000 A
+0.4616 151000 T
 # 16000
-0.2656 152000 T
+0.4616 152000 T
 # 16000
-0.2808 138000 A
-
-WT: Window: 16000  Threshold: 31000
-EI: setting window to 16000 += 138000 - 137000
-0.2808 153000 T
+0.4968 138000 A
+0.4968 153000 T
 # 17000
-0.2808 154000 T
+0.4968 154000 T
 # 17000
-0.2816 139000 A
-
-WT: Window: 17000  Threshold: 31000
-EI: setting window to 17000 += 139000 - 138000
-0.2816 155000 T
+0.4976 139000 A
+0.4976 155000 T
 # 18000
-0.2816 156000 T
+0.4976 156000 T
 # 18000
-0.2824 140000 A
-
-WT: Window: 18000  Threshold: 31000
-EI: setting window to 18000 += 140000 - 139000
-0.2824 157000 T
+0.4984 140000 A
+0.4984 157000 T
 # 19000
-0.2824 158000 T
+0.4984 158000 T
 # 19000
-0.2832 141000 A
-
-WT: Window: 19000  Threshold: 31000
-EI: setting window to 19000 += 141000 - 140000
-0.2832 159000 T
+0.4992 141000 A
+0.4992 159000 T
 # 20000
-0.2832 160000 T
+0.4992 160000 T
 # 20000
-0.284 142000 A
-
-WT: Window: 20000  Threshold: 31000
-EI: setting window to 20000 += 142000 - 141000
-0.284 161000 T
+0.5 142000 A
+0.5 161000 T
 # 21000
-0.284 162000 T
+0.5 162000 T
 # 21000
-0.2848 143000 A
-
-WT: Window: 21000  Threshold: 31000
-EI: setting window to 21000 += 143000 - 142000
-0.2848 163000 T
+0.5008 143000 A
+0.5008 163000 T
 # 22000
-0.2848 164000 T
+0.5008 164000 T
 # 22000
-0.2856 144000 A
-
-WT: Window: 22000  Threshold: 31000
-EI: setting window to 22000 += 144000 - 143000
-0.2856 165000 T
+0.5016 144000 A
+0.5016 165000 T
 # 23000
-0.2856 166000 T
+0.5016 166000 T
 # 23000
-0.2864 145000 A
-
-WT: Window: 23000  Threshold: 31000
-EI: setting window to 23000 += 145000 - 144000
-0.2864 167000 T
+0.5024 145000 A
+0.5024 167000 T
 # 24000
-0.2864 168000 T
+0.5024 168000 T
 # 24000
-0.2872 146000 A
-
-WT: Window: 24000  Threshold: 31000
-EI: setting window to 24000 += 146000 - 145000
-0.2872 169000 T
+0.5032 146000 A
+0.5032 169000 T
 # 25000
-0.2872 170000 T
+0.5032 170000 T
 # 25000
-0.288 147000 A
-
-WT: Window: 25000  Threshold: 31000
-EI: setting window to 25000 += 147000 - 146000
-0.288 171000 T
+0.504 147000 A
+0.504 171000 T
 # 26000
-0.288 172000 T
+0.504 172000 T
 # 26000
-0.2888 148000 A
-
-WT: Window: 26000  Threshold: 31000
-EI: setting window to 26000 += 148000 - 147000
-0.2888 173000 T
+0.5048 148000 A
+0.5048 173000 T
 # 27000
-0.2888 174000 T
+0.5048 174000 T
 # 27000
-0.2896 149000 A
-
-WT: Window: 27000  Threshold: 31000
-EI: setting window to 27000 += 149000 - 148000
-0.2896 175000 T
+0.5056 149000 A
+0.5056 175000 T
 # 28000
-0.2896 176000 T
+0.5056 176000 T
 # 28000
-0.2904 150000 A
-
-WT: Window: 28000  Threshold: 31000
-EI: setting window to 28000 += 150000 - 149000
-0.2904 177000 T
+0.5064 150000 A
+0.5064 177000 T
 # 29000
-0.2904 178000 T
+0.5064 178000 T
 # 29000
-0.2912 151000 A
-
-WT: Window: 29000  Threshold: 31000
-EI: setting window to 29000 += 151000 - 150000
-0.2912 179000 T
+0.5072 151000 A
+0.5072 179000 T
 # 30000
-0.2912 180000 T
+0.5072 180000 T
 # 30000
-0.292 152000 A
-
-WT: Window: 30000  Threshold: 31000
-EI: setting window to 30000 += 152000 - 151000
-0.292 181000 T
+0.508 152000 A
+0.508 181000 T
 # 31000
-0.292 182000 T
+0.508 182000 T
 # 31000
-0.2928 153000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 32
-0.2928 183000 T
+0.5088 153000 A
+0.5088 183000 T
 # 31000
-0.3016 154000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 64
-0.3016 184000 T
+0.5376 154000 A
+0.5376 184000 T
 # 31000
-0.3024 155000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 96
-0.3024 185000 T
+0.5384 155000 A
+0.5384 185000 T
 # 31000
-0.3032 156000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 128
-0.3032 186000 T
+0.5392 156000 A
+0.5392 186000 T
 # 31000
-0.304 157000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 160
-0.304 187000 T
+0.54 157000 A
+0.54 187000 T
 # 31000
-0.3048 158000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 192
-0.3048 188000 T
+0.5408 158000 A
+0.5408 188000 T
 # 31000
-0.3056 159000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 224
-0.3056 189000 T
+0.5416 159000 A
+0.5416 189000 T
 # 31000
-0.3064 160000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 256
-0.3064 190000 T
+0.5424 160000 A
+0.5424 190000 T
 # 31000
-0.3072 161000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 288
-0.3072 191000 T
+0.5432 161000 A
+0.5432 191000 T
 # 31000
-0.308 162000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 320
-0.308 192000 T
+0.544 162000 A
+0.544 192000 T
 # 31000
-0.3088 163000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 352
-0.3088 193000 T
+0.5448 163000 A
+0.5448 193000 T
 # 31000
-0.3096 164000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 384
-0.3096 194000 T
+0.5456 164000 A
+0.5456 194000 T
 # 31000
-0.3104 165000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 416
-0.3104 195000 T
+0.5464 165000 A
+0.5464 195000 T
 # 31000
-0.3112 166000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 448
-0.3112 196000 T
+0.5472 166000 A
+0.5472 196000 T
 # 31000
-0.312 167000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 480
-0.312 197000 T
+0.548 167000 A
+0.548 197000 T
 # 31000
-0.3128 168000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 512
-0.3128 198000 T
+0.5488 168000 A
+0.5488 198000 T
 # 31000
-0.3136 169000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 544
-0.3136 199000 T
+0.5496 169000 A
+0.5496 199000 T
 # 31000
-0.3144 170000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 576
-0.3144 200000 T
+0.5504 170000 A
+0.5504 200000 T
 # 31000
-0.3152 171000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 608
-0.3152 201000 T
+0.5512 171000 A
+0.5512 201000 T
 # 31000
-0.316 172000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 640
-0.316 202000 T
+0.552 172000 A
+0.552 202000 T
 # 31000
-0.3168 173000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 672
-0.3168 203000 T
+0.5528 173000 A
+0.5528 203000 T
 # 31000
-0.3176 174000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 704
-0.3176 204000 T
+0.5536 174000 A
+0.5536 204000 T
 # 31000
-0.3184 175000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 736
-0.3184 205000 T
+0.5544 175000 A
+0.5544 205000 T
 # 31000
-0.3192 176000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 768
-0.3192 206000 T
+0.5552 176000 A
+0.5552 206000 T
 # 31000
-0.32 177000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 800
-0.32 207000 T
+0.556 177000 A
+0.556 207000 T
 # 31000
-0.3208 178000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 832
-0.3208 208000 T
+0.5568 178000 A
+0.5568 208000 T
 # 31000
-0.3216 179000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 864
-0.3216 209000 T
+0.5576 179000 A
+0.5576 209000 T
 # 31000
-0.3224 180000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 896
-0.3224 210000 T
+0.5584 180000 A
+0.5584 210000 T
 # 31000
-0.3232 181000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 928
-0.3232 211000 T
+0.5592 181000 A
+0.5592 211000 T
 # 31000
-0.324 182000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 960
-0.324 212000 T
+0.56 182000 A
+0.56 212000 T
 # 31000
-0.3248 183000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 0
-AI: remaining inc_sum is 992
-0.3248 213000 T
+0.5608 183000 A
+0.5608 213000 T
 # 31000
-0.3256 184000 A
-
-WT: Window: 31000  Threshold: 31000
-AI: setting window to 31000 += 1000 * 1
-AI: remaining inc_sum is 24
-0.3256 214000 T
+0.5616 184000 A
+0.5616 214000 T
 # 32000
-0.3256 215000 T
+0.5616 215000 T
 # 32000
-0.3264 185000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 55
-0.3264 216000 T
+0.5784 185000 A
+0.5784 216000 T
 # 32000
-0.3272 186000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 86
-0.3272 217000 T
+0.5792 186000 A
+0.5792 217000 T
 # 32000
-0.328 187000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 117
-0.328 218000 T
+0.58 187000 A
+0.58 218000 T
 # 32000
-0.3288 188000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 148
-0.3288 219000 T
+0.5808 188000 A
+0.5808 219000 T
 # 32000
-0.3296 189000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 179
-0.3296 220000 T
+0.5816 189000 A
+0.5816 220000 T
 # 32000
-0.3304 190000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 210
-0.3304 221000 T
+0.5824 190000 A
+0.5824 221000 T
 # 32000
-0.3312 191000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 241
-0.3312 222000 T
+0.5832 191000 A
+0.5832 222000 T
 # 32000
-0.332 192000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 272
-0.332 223000 T
+0.584 192000 A
+0.584 223000 T
 # 32000
-0.3328 193000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 303
-0.3328 224000 T
+0.5848 193000 A
+0.5848 224000 T
 # 32000
-0.3336 194000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 334
-0.3336 225000 T
+0.5856 194000 A
+0.5856 225000 T
 # 32000
-0.3344 195000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 365
-0.3344 226000 T
+0.5864 195000 A
+0.5864 226000 T
 # 32000
-0.3352 196000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 396
-0.3352 227000 T
+0.5872 196000 A
+0.5872 227000 T
 # 32000
-0.336 197000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 427
-0.336 228000 T
+0.588 197000 A
+0.588 228000 T
 # 32000
-0.3368 198000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 458
-0.3368 229000 T
+0.5888 198000 A
+0.5888 229000 T
 # 32000
-0.3376 199000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 489
-0.3376 230000 T
+0.5896 199000 A
+0.5896 230000 T
 # 32000
-0.3384 200000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 520
-0.3384 231000 T
+0.5904 200000 A
+0.5904 231000 T
 # 32000
-0.3392 201000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 551
-0.3392 232000 T
+0.5912 201000 A
+0.5912 232000 T
 # 32000
-0.34 202000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 582
-0.34 233000 T
+0.592 202000 A
+0.592 233000 T
 # 32000
-0.3408 203000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 613
-0.3408 234000 T
+0.5928 203000 A
+0.5928 234000 T
 # 32000
-0.3416 204000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 644
-0.3416 235000 T
+0.5936 204000 A
+0.5936 235000 T
 # 32000
-0.3424 205000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 675
-0.3424 236000 T
+0.5944 205000 A
+0.5944 236000 T
 # 32000
-0.3432 206000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 706
-0.3432 237000 T
+0.5952 206000 A
+0.5952 237000 T
 # 32000
-0.344 207000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 737
-0.344 238000 T
+0.596 207000 A
+0.596 238000 T
 # 32000
-0.3448 208000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 768
-0.3448 239000 T
+0.5968 208000 A
+0.5968 239000 T
 # 32000
-0.3456 209000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 799
-0.3456 240000 T
+0.5976 209000 A
+0.5976 240000 T
 # 32000
-0.3464 210000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 830
-0.3464 241000 T
+0.5984 210000 A
+0.5984 241000 T
 # 32000
-0.3472 211000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 861
-0.3472 242000 T
+0.5992 211000 A
+0.5992 242000 T
 # 32000
-0.348 212000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 892
-0.348 243000 T
+0.6 212000 A
+0.6 243000 T
 # 32000
-0.3488 213000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 923
-0.3488 244000 T
+0.6008 213000 A
+0.6008 244000 T
 # 32000
-0.3496 214000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 954
-0.3496 245000 T
+0.6016 214000 A
+0.6016 245000 T
 # 32000
-0.3504 215000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 0
-AI: remaining inc_sum is 985
-0.3504 246000 T
+0.6024 215000 A
+0.6024 246000 T
 # 32000
-0.3512 216000 A
-
-WT: Window: 32000  Threshold: 31000
-AI: setting window to 32000 += 1000 * 1
-AI: remaining inc_sum is 16
-0.3512 247000 T
+0.6032 216000 A
+0.6032 247000 T
 # 33000
-0.3512 248000 T
+0.6032 248000 T
 # 33000
-0.352 217000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 46
-0.352 249000 T
+0.6192 217000 A
+0.6192 249000 T
 # 33000
-0.3528 218000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 76
-0.3528 250000 T
+0.62 218000 A
+0.62 250000 T
 # 33000
-0.3536 219000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 106
-0.3536 251000 T
+0.6208 219000 A
+0.6208 251000 T
 # 33000
-0.3544 220000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 136
-0.3544 252000 T
+0.6216 220000 A
+0.6216 252000 T
 # 33000
-0.3552 221000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 166
-0.3552 253000 T
+0.6224 221000 A
+0.6224 253000 T
 # 33000
-0.356 222000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 196
-0.356 254000 T
+0.6232 222000 A
+0.6232 254000 T
 # 33000
-0.3568 223000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 226
-0.3568 255000 T
+0.624 223000 A
+0.624 255000 T
 # 33000
-0.3576 224000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 256
-0.3576 256000 T
+0.6248 224000 A
+0.6248 256000 T
 # 33000
-0.3584 225000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 286
-0.3584 257000 T
+0.6256 225000 A
+0.6256 257000 T
 # 33000
-0.3592 226000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 316
-0.3592 258000 T
+0.6264 226000 A
+0.6264 258000 T
 # 33000
-0.36 227000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 346
-0.36 259000 T
+0.6272 227000 A
+0.6272 259000 T
 # 33000
-0.3608 228000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 376
-0.3608 260000 T
+0.628 228000 A
+0.628 260000 T
 # 33000
-0.3616 229000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 406
-0.3616 261000 T
+0.6288 229000 A
+0.6288 261000 T
 # 33000
-0.3624 230000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 436
-0.3624 262000 T
+0.6296 230000 A
+0.6296 262000 T
 # 33000
-0.3632 231000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 466
-0.3632 263000 T
+0.6304 231000 A
+0.6304 263000 T
 # 33000
-0.364 232000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 496
-0.364 264000 T
+0.6312 232000 A
+0.6312 264000 T
 # 33000
-0.3648 233000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 526
-0.3648 265000 T
+0.632 233000 A
+0.632 265000 T
 # 33000
-0.3656 234000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 556
-0.3656 266000 T
+0.6328 234000 A
+0.6328 266000 T
 # 33000
-0.3664 235000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 586
-0.3664 267000 T
+0.6336 235000 A
+0.6336 267000 T
 # 33000
-0.3672 236000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 616
-0.3672 268000 T
+0.6344 236000 A
+0.6344 268000 T
 # 33000
-0.368 237000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 646
-0.368 269000 T
+0.6352 237000 A
+0.6352 269000 T
 # 33000
-0.3688 238000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 676
-0.3688 270000 T
+0.636 238000 A
+0.636 270000 T
 # 33000
-0.3696 239000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 706
-0.3696 271000 T
+0.6368 239000 A
+0.6368 271000 T
 # 33000
-0.3704 240000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 736
-0.3704 272000 T
+0.6376 240000 A
+0.6376 272000 T
 # 33000
-0.3712 241000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 766
-0.3712 273000 T
+0.6384 241000 A
+0.6384 273000 T
 # 33000
-0.372 242000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 796
-0.372 274000 T
+0.6392 242000 A
+0.6392 274000 T
 # 33000
-0.3728 243000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 826
-0.3728 275000 T
+0.64 243000 A
+0.64 275000 T
 # 33000
-0.3736 244000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 856
-0.3736 276000 T
+0.6408 244000 A
+0.6408 276000 T
 # 33000
-0.3744 245000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 886
-0.3744 277000 T
+0.6416 245000 A
+0.6416 277000 T
 # 33000
-0.3752 246000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 916
-0.3752 278000 T
+0.6424 246000 A
+0.6424 278000 T
 # 33000
-0.376 247000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 946
-0.376 279000 T
+0.6432 247000 A
+0.6432 279000 T
 # 33000
-0.3768 248000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 0
-AI: remaining inc_sum is 976
-0.3768 280000 T
+0.644 248000 A
+0.644 280000 T
 # 33000
-0.3776 249000 A
-
-WT: Window: 33000  Threshold: 31000
-AI: setting window to 33000 += 1000 * 1
-AI: remaining inc_sum is 6
-0.3776 281000 T
+0.6448 249000 A
+0.6448 281000 T
 # 34000
-0.3776 282000 T
+0.6448 282000 T
 # 34000
-0.3784 250000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 35
-0.3784 283000 T
+0.66 250000 A
+0.66 283000 T
 # 34000
-0.3792 251000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 64
-0.3792 284000 T
+0.6608 251000 A
+0.6608 284000 T
 # 34000
-0.38 252000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 93
-0.38 285000 T
+0.6616 252000 A
+0.6616 285000 T
 # 34000
-0.3808 253000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 122
-0.3808 286000 T
+0.6624 253000 A
+0.6624 286000 T
 # 34000
-0.3816 254000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 151
-0.3816 287000 T
+0.6632 254000 A
+0.6632 287000 T
 # 34000
-0.3824 255000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 180
-0.3824 288000 T
+0.664 255000 A
+0.664 288000 T
 # 34000
-0.3832 256000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 209
-0.3832 289000 T
+0.6648 256000 A
+0.6648 289000 T
 # 34000
-0.384 257000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 238
-0.384 290000 T
+0.6656 257000 A
+0.6656 290000 T
 # 34000
-0.3848 258000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 267
-0.3848 291000 T
+0.6664 258000 A
+0.6664 291000 T
 # 34000
-0.3856 259000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 296
-0.3856 292000 T
+0.6672 259000 A
+0.6672 292000 T
 # 34000
-0.3864 260000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 325
-0.3864 293000 T
+0.668 260000 A
+0.668 293000 T
 # 34000
-0.3872 261000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 354
-0.3872 294000 T
+0.6688 261000 A
+0.6688 294000 T
 # 34000
-0.388 262000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 383
-0.388 295000 T
+0.6696 262000 A
+0.6696 295000 T
 # 34000
-0.3888 263000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 412
-0.3888 296000 T
+0.6704 263000 A
+0.6704 296000 T
 # 34000
-0.3896 264000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 441
-0.3896 297000 T
+0.6712 264000 A
+0.6712 297000 T
 # 34000
-0.3904 265000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 470
-0.3904 298000 T
+0.672 265000 A
+0.672 298000 T
 # 34000
-0.3912 266000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 499
-0.3912 299000 T
+0.6728 266000 A
+0.6728 299000 T
 # 34000
-0.392 267000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 528
-0.392 300000 T
+0.6736 267000 A
+0.6736 300000 T
 # 34000
-0.3928 268000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 557
-0.3928 301000 T
+0.6744 268000 A
+0.6744 301000 T
 # 34000
-0.3936 269000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 586
-0.3936 302000 T
+0.6752 269000 A
+0.6752 302000 T
 # 34000
-0.3944 270000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 615
-0.3944 303000 T
+0.676 270000 A
+0.676 303000 T
 # 34000
-0.3952 271000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 644
-0.3952 304000 T
+0.6768 271000 A
+0.6768 304000 T
 # 34000
-0.396 272000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 673
-0.396 305000 T
+0.6776 272000 A
+0.6776 305000 T
 # 34000
-0.3968 273000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 702
-0.3968 306000 T
+0.6784 273000 A
+0.6784 306000 T
 # 34000
-0.3976 274000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 731
-0.3976 307000 T
+0.6792 274000 A
+0.6792 307000 T
 # 34000
-0.3984 275000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 760
-0.3984 308000 T
+0.68 275000 A
+0.68 308000 T
 # 34000
-0.3992 276000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 789
-0.3992 309000 T
+0.6808 276000 A
+0.6808 309000 T
 # 34000
-0.4 277000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 818
-0.4 310000 T
+0.6816 277000 A
+0.6816 310000 T
 # 34000
-0.4008 278000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 847
-0.4008 311000 T
+0.6824 278000 A
+0.6824 311000 T
 # 34000
-0.4016 279000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 876
-0.4016 312000 T
+0.6832 279000 A
+0.6832 312000 T
 # 34000
-0.4024 280000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 905
-0.4024 313000 T
+0.684 280000 A
+0.684 313000 T
 # 34000
-0.4032 281000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 934
-0.4032 314000 T
+0.6848 281000 A
+0.6848 314000 T
 # 34000
-0.404 282000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 963
-0.404 315000 T
+0.6856 282000 A
+0.6856 315000 T
 # 34000
-0.4048 283000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 0
-AI: remaining inc_sum is 992
-0.4048 316000 T
+0.6864 283000 A
+0.6864 316000 T
 # 34000
-0.4056 284000 A
-
-WT: Window: 34000  Threshold: 31000
-AI: setting window to 34000 += 1000 * 1
-AI: remaining inc_sum is 21
-0.4056 317000 T
+0.7008 284000 A
+0.7008 317000 T
 # 35000
-0.4056 318000 T
+0.7008 318000 T
 # 35000
-0.4064 285000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 49
-0.4064 319000 T
+0.7016 285000 A
+0.7016 319000 T
 # 35000
-0.4072 286000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 77
-0.4072 320000 T
+0.7024 286000 A
+0.7024 320000 T
 # 35000
-0.408 287000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 105
-0.408 321000 T
+0.7032 287000 A
+0.7032 321000 T
 # 35000
-0.4088 288000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 133
-0.4088 322000 T
+0.704 288000 A
+0.704 322000 T
 # 35000
-0.4096 289000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 161
-0.4096 323000 T
+0.7048 289000 A
+0.7048 323000 T
 # 35000
-0.4104 290000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 189
-0.4104 324000 T
+0.7056 290000 A
+0.7056 324000 T
 # 35000
-0.4112 291000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 217
-0.4112 325000 T
+0.7064 291000 A
+0.7064 325000 T
 # 35000
-0.412 292000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 245
-0.412 326000 T
+0.7072 292000 A
+0.7072 326000 T
 # 35000
-0.4128 293000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 273
-0.4128 327000 T
+0.708 293000 A
+0.708 327000 T
 # 35000
-0.4136 294000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 301
-0.4136 328000 T
+0.7088 294000 A
+0.7088 328000 T
 # 35000
-0.4144 295000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 329
-0.4144 329000 T
+0.7096 295000 A
+0.7096 329000 T
 # 35000
-0.4152 296000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 357
-0.4152 330000 T
+0.7104 296000 A
+0.7104 330000 T
 # 35000
-0.416 297000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 385
-0.416 331000 T
+0.7112 297000 A
+0.7112 331000 T
 # 35000
-0.4168 298000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 413
-0.4168 332000 T
+0.712 298000 A
+0.712 332000 T
 # 35000
-0.4176 299000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 441
-0.4176 333000 T
+0.7128 299000 A
+0.7128 333000 T
 # 35000
-0.4184 300000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 469
-0.4184 334000 T
+0.7136 300000 A
+0.7136 334000 T
 # 35000
-0.4192 301000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 497
-0.4192 335000 T
+0.7144 301000 A
+0.7144 335000 T
 # 35000
-0.42 302000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 525
-0.42 336000 T
+0.7152 302000 A
+0.7152 336000 T
 # 35000
-0.4208 303000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 553
-0.4208 337000 T
+0.716 303000 A
+0.716 337000 T
 # 35000
-0.4216 304000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 581
-0.4216 338000 T
+0.7168 304000 A
+0.7168 338000 T
 # 35000
-0.4224 305000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 609
-0.4224 339000 T
+0.7176 305000 A
+0.7176 339000 T
 # 35000
-0.4232 306000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 637
-0.4232 340000 T
+0.7184 306000 A
+0.7184 340000 T
 # 35000
-0.424 307000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 665
-0.424 341000 T
+0.7192 307000 A
+0.7192 341000 T
 # 35000
-0.4248 308000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 693
-0.4248 342000 T
+0.72 308000 A
+0.72 342000 T
 # 35000
-0.4256 309000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 721
-0.4256 343000 T
+0.7208 309000 A
+0.7208 343000 T
 # 35000
-0.4264 310000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 749
-0.4264 344000 T
+0.7216 310000 A
+0.7216 344000 T
 # 35000
-0.4272 311000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 777
-0.4272 345000 T
+0.7224 311000 A
+0.7224 345000 T
 # 35000
-0.428 312000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 805
-0.428 346000 T
+0.7232 312000 A
+0.7232 346000 T
 # 35000
-0.4288 313000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 833
-0.4288 347000 T
+0.724 313000 A
+0.724 347000 T
 # 35000
-0.4296 314000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 861
-0.4296 348000 T
+0.7248 314000 A
+0.7248 348000 T
 # 35000
-0.4304 315000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 889
-0.4304 349000 T
+0.7256 315000 A
+0.7256 349000 T
 # 35000
-0.4312 316000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 917
-0.4312 350000 T
+0.7264 316000 A
+0.7264 350000 T
 # 35000
-0.432 317000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 945
-0.432 351000 T
+0.7272 317000 A
+0.7272 351000 T
 # 35000
-0.4328 318000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 0
-AI: remaining inc_sum is 973
-0.4328 352000 T
+0.7416 318000 A
+0.7416 352000 T
 # 35000
-0.4336 319000 A
-
-WT: Window: 35000  Threshold: 31000
-AI: setting window to 35000 += 1000 * 1
-AI: remaining inc_sum is 1
-0.4336 353000 T
+0.7424 319000 A
+0.7424 353000 T
 # 36000
-0.4336 354000 T
+0.7424 354000 T
 # 36000
-0.4344 320000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 28
-0.4344 355000 T
+0.7432 320000 A
+0.7432 355000 T
 # 36000
-0.4352 321000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 55
-0.4352 356000 T
+0.744 321000 A
+0.744 356000 T
 # 36000
-0.436 322000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 82
-0.436 357000 T
+0.7448 322000 A
+0.7448 357000 T
 # 36000
-0.4368 323000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 109
-0.4368 358000 T
+0.7456 323000 A
+0.7456 358000 T
 # 36000
-0.4376 324000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 136
-0.4376 359000 T
+0.7464 324000 A
+0.7464 359000 T
 # 36000
-0.4384 325000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 163
-0.4384 360000 T
+0.7472 325000 A
+0.7472 360000 T
 # 36000
-0.4392 326000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 190
-0.4392 361000 T
+0.748 326000 A
+0.748 361000 T
 # 36000
-0.44 327000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 217
-0.44 362000 T
+0.7488 327000 A
+0.7488 362000 T
 # 36000
-0.4408 328000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 244
-0.4408 363000 T
+0.7496 328000 A
+0.7496 363000 T
 # 36000
-0.4416 329000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 271
-0.4416 364000 T
+0.7504 329000 A
+0.7504 364000 T
 # 36000
-0.4424 330000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 298
-0.4424 365000 T
+0.7512 330000 A
+0.7512 365000 T
 # 36000
-0.4432 331000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 325
-0.4432 366000 T
+0.752 331000 A
+0.752 366000 T
 # 36000
-0.444 332000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 352
-0.444 367000 T
+0.7528 332000 A
+0.7528 367000 T
 # 36000
-0.4448 333000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 379
-0.4448 368000 T
+0.7536 333000 A
+0.7536 368000 T
 # 36000
-0.4456 334000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 406
-0.4456 369000 T
+0.7544 334000 A
+0.7544 369000 T
 # 36000
-0.4464 335000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 433
-0.4464 370000 T
+0.7552 335000 A
+0.7552 370000 T
 # 36000
-0.4472 336000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 460
-0.4472 371000 T
+0.756 336000 A
+0.756 371000 T
 # 36000
-0.448 337000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 487
-0.448 372000 T
+0.7568 337000 A
+0.7568 372000 T
 # 36000
-0.4488 338000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 514
-0.4488 373000 T
+0.7576 338000 A
+0.7576 373000 T
 # 36000
-0.4496 339000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 541
-0.4496 374000 T
+0.7584 339000 A
+0.7584 374000 T
 # 36000
-0.4504 340000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 568
-0.4504 375000 T
+0.7592 340000 A
+0.7592 375000 T
 # 36000
-0.4512 341000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 595
-0.4512 376000 T
+0.76 341000 A
+0.76 376000 T
 # 36000
-0.452 342000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 622
-0.452 377000 T
+0.7608 342000 A
+0.7608 377000 T
 # 36000
-0.4528 343000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 649
-0.4528 378000 T
+0.7616 343000 A
+0.7616 378000 T
 # 36000
-0.4536 344000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 676
-0.4536 379000 T
+0.7624 344000 A
+0.7624 379000 T
 # 36000
-0.4544 345000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 703
-0.4544 380000 T
+0.7632 345000 A
+0.7632 380000 T
 # 36000
-0.4552 346000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 730
-0.4552 381000 T
+0.764 346000 A
+0.764 381000 T
 # 36000
-0.456 347000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 757
-0.456 382000 T
+0.7648 347000 A
+0.7648 382000 T
 # 36000
-0.4568 348000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 784
-0.4568 383000 T
+0.7656 348000 A
+0.7656 383000 T
 # 36000
-0.4576 349000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 811
-0.4576 384000 T
+0.7664 349000 A
+0.7664 384000 T
 # 36000
-0.4584 350000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 838
-0.4584 385000 T
+0.7672 350000 A
+0.7672 385000 T
 # 36000
-0.4592 351000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 865
-0.4592 386000 T
+0.768 351000 A
+0.768 386000 T
 # 36000
-0.46 352000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 892
-0.46 387000 T
+0.7688 352000 A
+0.7688 387000 T
 # 36000
-0.4608 353000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 919
-0.4608 388000 T
+0.7824 353000 A
+0.7824 388000 T
 # 36000
-0.4616 354000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 946
-0.4616 389000 T
+0.7832 354000 A
+0.7832 389000 T
 # 36000
-0.4624 355000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 0
-AI: remaining inc_sum is 973
-0.4624 390000 T
+0.784 355000 A
+0.784 390000 T
 # 36000
-0.4632 356000 A
-
-WT: Window: 36000  Threshold: 31000
-AI: setting window to 36000 += 1000 * 1
-AI: remaining inc_sum is 0
-0.4632 391000 T
+0.7848 356000 A
+0.7848 391000 T
 # 37000
-0.4632 392000 T
+0.7848 392000 T
 # 37000
-0.464 357000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 27
-0.464 393000 T
+0.7856 357000 A
+0.7856 393000 T
 # 37000
-0.4648 358000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 54
-0.4648 394000 T
+0.7864 358000 A
+0.7864 394000 T
 # 37000
-0.4656 359000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 81
-0.4656 395000 T
+0.7872 359000 A
+0.7872 395000 T
 # 37000
-0.4664 360000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 108
-0.4664 396000 T
+0.788 360000 A
+0.788 396000 T
 # 37000
-0.4672 361000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 135
-0.4672 397000 T
+0.7888 361000 A
+0.7888 397000 T
 # 37000
-0.468 362000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 162
-0.468 398000 T
+0.7896 362000 A
+0.7896 398000 T
 # 37000
-0.4688 363000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 189
-0.4688 399000 T
+0.7904 363000 A
+0.7904 399000 T
 # 37000
-0.4696 364000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 216
-0.4696 400000 T
+0.7912 364000 A
+0.7912 400000 T
 # 37000
-0.4704 365000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 243
-0.4704 401000 T
+0.792 365000 A
+0.792 401000 T
 # 37000
-0.4712 366000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 270
-0.4712 402000 T
+0.7928 366000 A
+0.7928 402000 T
 # 37000
-0.472 367000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 297
-0.472 403000 T
+0.7936 367000 A
+0.7936 403000 T
 # 37000
-0.4728 368000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 324
-0.4728 404000 T
+0.7944 368000 A
+0.7944 404000 T
 # 37000
-0.4736 369000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 351
-0.4736 405000 T
+0.7952 369000 A
+0.7952 405000 T
 # 37000
-0.4744 370000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 378
-0.4744 406000 T
+0.796 370000 A
+0.796 406000 T
 # 37000
-0.4752 371000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 405
-0.4752 407000 T
+0.7968 371000 A
+0.7968 407000 T
 # 37000
-0.476 372000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 432
-0.476 408000 T
+0.7976 372000 A
+0.7976 408000 T
 # 37000
-0.4768 373000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 459
-0.4768 409000 T
+0.7984 373000 A
+0.7984 409000 T
 # 37000
-0.4776 374000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 486
-0.4776 410000 T
+0.7992 374000 A
+0.7992 410000 T
 # 37000
-0.4784 375000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 513
-0.4784 411000 T
+0.8 375000 A
+0.8 411000 T
 # 37000
-0.4792 376000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 540
-0.4792 412000 T
+0.8008 376000 A
+0.8008 412000 T
 # 37000
-0.48 377000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 567
-0.48 413000 T
+0.8016 377000 A
+0.8016 413000 T
 # 37000
-0.4808 378000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 594
-0.4808 414000 T
+0.8024 378000 A
+0.8024 414000 T
 # 37000
-0.4816 379000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 621
-0.4816 415000 T
+0.8032 379000 A
+0.8032 415000 T
 # 37000
-0.4824 380000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 648
-0.4824 416000 T
+0.804 380000 A
+0.804 416000 T
 # 37000
-0.4832 381000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 675
-0.4832 417000 T
+0.8048 381000 A
+0.8048 417000 T
 # 37000
-0.484 382000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 702
-0.484 418000 T
+0.8056 382000 A
+0.8056 418000 T
 # 37000
-0.4848 383000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 729
-0.4848 419000 T
+0.8064 383000 A
+0.8064 419000 T
 # 37000
-0.4856 384000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 756
-0.4856 420000 T
+0.8072 384000 A
+0.8072 420000 T
 # 37000
-0.4864 385000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 783
-0.4864 421000 T
+0.808 385000 A
+0.808 421000 T
 # 37000
-0.4872 386000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 810
-0.4872 422000 T
+0.8088 386000 A
+0.8088 422000 T
 # 37000
-0.488 387000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 837
-0.488 423000 T
+0.8096 387000 A
+0.8096 423000 T
 # 37000
-0.4888 388000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 864
-0.4888 424000 T
+0.8104 388000 A
+0.8104 424000 T
 # 37000
-0.4896 389000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 891
-0.4896 425000 T
+0.8232 389000 A
+0.8232 425000 T
 # 37000
-0.4904 390000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 918
-0.4904 426000 T
+0.824 390000 A
+0.824 426000 T
 # 37000
-0.4912 391000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 945
-0.4912 427000 T
+0.8248 391000 A
+0.8248 427000 T
 # 37000
-0.492 392000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 972
-0.492 428000 T
+0.8256 392000 A
+0.8256 428000 T
 # 37000
-0.4928 393000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 0
-AI: remaining inc_sum is 999
-0.4928 429000 T
+0.8264 393000 A
+0.8264 429000 T
 # 37000
-0.4936 394000 A
-
-WT: Window: 37000  Threshold: 31000
-AI: setting window to 37000 += 1000 * 1
-AI: remaining inc_sum is 26
-0.4936 430000 T
+0.8272 394000 A
+0.8272 430000 T
 # 38000
-0.4936 431000 T
+0.8272 431000 T
 # 38000
-0.4944 395000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 52
-0.4944 432000 T
+0.828 395000 A
+0.828 432000 T
 # 38000
-0.4952 396000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 78
-0.4952 433000 T
+0.8288 396000 A
+0.8288 433000 T
 # 38000
-0.496 397000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 104
-0.496 434000 T
+0.8296 397000 A
+0.8296 434000 T
 # 38000
-0.4968 398000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 130
-0.4968 435000 T
+0.8304 398000 A
+0.8304 435000 T
 # 38000
-0.4976 399000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 156
-0.4976 436000 T
+0.8312 399000 A
+0.8312 436000 T
 # 38000
-0.4984 400000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 182
-0.4984 437000 T
+0.832 400000 A
+0.832 437000 T
 # 38000
-0.4992 401000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 208
-0.4992 438000 T
+0.8328 401000 A
+0.8328 438000 T
 # 38000
-0.5 402000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 234
-0.5 439000 T
+0.8336 402000 A
+0.8336 439000 T
 # 38000
-0.5008 403000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 260
-0.5008 440000 T
+0.8344 403000 A
+0.8344 440000 T
 # 38000
-0.5016 404000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 286
-0.5016 441000 T
+0.8352 404000 A
+0.8352 441000 T
 # 38000
-0.5024 405000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 312
-0.5024 442000 T
+0.836 405000 A
+0.836 442000 T
 # 38000
-0.5032 406000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 338
-0.5032 443000 T
+0.8368 406000 A
+0.8368 443000 T
 # 38000
-0.504 407000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 364
-0.504 444000 T
+0.8376 407000 A
+0.8376 444000 T
 # 38000
-0.5048 408000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 390
-0.5048 445000 T
+0.8384 408000 A
+0.8384 445000 T
 # 38000
-0.5056 409000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 416
-0.5056 446000 T
+0.8392 409000 A
+0.8392 446000 T
 # 38000
-0.5064 410000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 442
-0.5064 447000 T
+0.84 410000 A
+0.84 447000 T
 # 38000
-0.5072 411000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 468
-0.5072 448000 T
+0.8408 411000 A
+0.8408 448000 T
 # 38000
-0.508 412000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 494
-0.508 449000 T
+0.8416 412000 A
+0.8416 449000 T
 # 38000
-0.5088 413000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 520
-0.5088 450000 T
+0.8424 413000 A
+0.8424 450000 T
 # 38000
-0.5096 414000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 546
-0.5096 451000 T
+0.8432 414000 A
+0.8432 451000 T
 # 38000
-0.5104 415000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 572
-0.5104 452000 T
+0.844 415000 A
+0.844 452000 T
 # 38000
-0.5112 416000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 598
-0.5112 453000 T
+0.8448 416000 A
+0.8448 453000 T
 # 38000
-0.512 417000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 624
-0.512 454000 T
+0.8456 417000 A
+0.8456 454000 T
 # 38000
-0.5128 418000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 650
-0.5128 455000 T
+0.8464 418000 A
+0.8464 455000 T
 # 38000
-0.5136 419000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 676
-0.5136 456000 T
+0.8472 419000 A
+0.8472 456000 T
 # 38000
-0.5144 420000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 702
-0.5144 457000 T
+0.848 420000 A
+0.848 457000 T
 # 38000
-0.5152 421000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 728
-0.5152 458000 T
+0.8488 421000 A
+0.8488 458000 T
 # 38000
-0.516 422000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 754
-0.516 459000 T
+0.8496 422000 A
+0.8496 459000 T
 # 38000
-0.5168 423000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 780
-0.5168 460000 T
+0.8504 423000 A
+0.8504 460000 T
 # 38000
-0.5176 424000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 806
-0.5176 461000 T
+0.8512 424000 A
+0.8512 461000 T
 # 38000
-0.5184 425000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 832
-0.5184 462000 T
+0.852 425000 A
+0.852 462000 T
 # 38000
-0.5192 426000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 858
-0.5192 463000 T
+0.864 426000 A
+0.864 463000 T
 # 38000
-0.52 427000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 884
-0.52 464000 T
+0.8648 427000 A
+0.8648 464000 T
 # 38000
-0.5208 428000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 910
-0.5208 465000 T
+0.8656 428000 A
+0.8656 465000 T
 # 38000
-0.5216 429000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 936
-0.5216 466000 T
+0.8664 429000 A
+0.8664 466000 T
 # 38000
-0.5224 430000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 962
-0.5224 467000 T
+0.8672 430000 A
+0.8672 467000 T
 # 38000
-0.5232 431000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 0
-AI: remaining inc_sum is 988
-0.5232 468000 T
+0.868 431000 A
+0.868 468000 T
 # 38000
-0.524 432000 A
-
-WT: Window: 38000  Threshold: 31000
-AI: setting window to 38000 += 1000 * 1
-AI: remaining inc_sum is 14
-0.524 469000 T
+0.8688 432000 A
+0.8688 469000 T
 # 39000
-0.524 470000 T
+0.8688 470000 T
 # 39000
-0.5248 433000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 39
-0.5248 471000 T
+0.8696 433000 A
+0.8696 471000 T
 # 39000
-0.5256 434000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 64
-0.5256 472000 T
+0.8704 434000 A
+0.8704 472000 T
 # 39000
-0.5264 435000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 89
-0.5264 473000 T
+0.8712 435000 A
+0.8712 473000 T
 # 39000
-0.5272 436000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 114
-0.5272 474000 T
+0.872 436000 A
+0.872 474000 T
 # 39000
-0.528 437000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 139
-0.528 475000 T
+0.8728 437000 A
+0.8728 475000 T
 # 39000
-0.5288 438000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 164
-0.5288 476000 T
+0.8736 438000 A
+0.8736 476000 T
 # 39000
-0.5296 439000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 189
-0.5296 477000 T
+0.8744 439000 A
+0.8744 477000 T
 # 39000
-0.5304 440000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 214
-0.5304 478000 T
+0.8752 440000 A
+0.8752 478000 T
 # 39000
-0.5312 441000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 239
-0.5312 479000 T
+0.876 441000 A
+0.876 479000 T
 # 39000
-0.532 442000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 264
-0.532 480000 T
+0.8768 442000 A
+0.8768 480000 T
 # 39000
-0.5328 443000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 289
-0.5328 481000 T
+0.8776 443000 A
+0.8776 481000 T
 # 39000
-0.5336 444000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 314
-0.5336 482000 T
+0.8784 444000 A
+0.8784 482000 T
 # 39000
-0.5344 445000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 339
-0.5344 483000 T
+0.8792 445000 A
+0.8792 483000 T
 # 39000
-0.5352 446000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 364
-0.5352 484000 T
+0.88 446000 A
+0.88 484000 T
 # 39000
-0.536 447000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 389
-0.536 485000 T
+0.8808 447000 A
+0.8808 485000 T
 # 39000
-0.5368 448000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 414
-0.5368 486000 T
+0.8816 448000 A
+0.8816 486000 T
 # 39000
-0.5376 449000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 439
-0.5376 487000 T
+0.8824 449000 A
+0.8824 487000 T
 # 39000
-0.5384 450000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 464
-0.5384 488000 T
+0.8832 450000 A
+0.8832 488000 T
 # 39000
-0.5392 451000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 489
-0.5392 489000 T
+0.884 451000 A
+0.884 489000 T
 # 39000
-0.54 452000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 514
-0.54 490000 T
+0.8848 452000 A
+0.8848 490000 T
 # 39000
-0.5408 453000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 539
-0.5408 491000 T
+0.8856 453000 A
+0.8856 491000 T
 # 39000
-0.5416 454000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 564
-0.5416 492000 T
+0.8864 454000 A
+0.8864 492000 T
 # 39000
-0.5424 455000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 589
-0.5424 493000 T
+0.8872 455000 A
+0.8872 493000 T
 # 39000
-0.5432 456000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 614
-0.5432 494000 T
+0.888 456000 A
+0.888 494000 T
 # 39000
-0.544 457000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 639
-0.544 495000 T
+0.8888 457000 A
+0.8888 495000 T
 # 39000
-0.5448 458000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 664
-0.5448 496000 T
+0.8896 458000 A
+0.8896 496000 T
 # 39000
-0.5456 459000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 689
-0.5456 497000 T
+0.8904 459000 A
+0.8904 497000 T
 # 39000
-0.5464 460000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 714
-0.5464 498000 T
+0.8912 460000 A
+0.8912 498000 T
 # 39000
-0.5472 461000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 739
-0.5472 499000 T
+0.892 461000 A
+0.892 499000 T
 # 39000
-0.548 462000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 764
-0.548 500000 T
+0.8928 462000 A
+0.8928 500000 T
 # 39000
-0.5488 463000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 789
-0.5488 501000 T
+0.8936 463000 A
+0.8936 501000 T
 # 39000
-0.5496 464000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 814
-0.5496 502000 T
+0.9048 464000 A
+0.9048 502000 T
 # 39000
-0.5504 465000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 839
-0.5504 503000 T
+0.9056 465000 A
+0.9056 503000 T
 # 39000
-0.5512 466000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 864
-0.5512 504000 T
+0.9064 466000 A
+0.9064 504000 T
 # 39000
-0.552 467000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 889
-0.552 505000 T
+0.9072 467000 A
+0.9072 505000 T
 # 39000
-0.5528 468000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 914
-0.5528 506000 T
+0.908 468000 A
+0.908 506000 T
 # 39000
-0.5536 469000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 939
-0.5536 507000 T
+0.9088 469000 A
+0.9088 507000 T
 # 39000
-0.5544 470000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 964
-0.5544 508000 T
+0.9096 470000 A
+0.9096 508000 T
 # 39000
-0.5552 471000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 0
-AI: remaining inc_sum is 989
-0.5552 509000 T
+0.9104 471000 A
+0.9104 509000 T
 # 39000
-0.556 472000 A
-
-WT: Window: 39000  Threshold: 31000
-AI: setting window to 39000 += 1000 * 1
-AI: remaining inc_sum is 14
-0.556 510000 T
+0.9112 472000 A
+0.9112 510000 T
 # 40000
-0.556 511000 T
+0.9112 511000 T
 # 40000
-0.5568 473000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 39
-0.5568 512000 T
+0.912 473000 A
+0.912 512000 T
 # 40000
-0.5576 474000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 64
-0.5576 513000 T
+0.9128 474000 A
+0.9128 513000 T
 # 40000
-0.5584 475000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 89
-0.5584 514000 T
+0.9136 475000 A
+0.9136 514000 T
 # 40000
-0.5592 476000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 114
-0.56 477000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 139
-0.5608 478000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 164
-0.5616 479000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 189
-0.5624 480000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 214
-0.5632 481000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 239
-0.564 482000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 264
-0.5648 483000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 289
-0.5656 484000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 314
-0.5664 485000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 339
-0.5672 486000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 364
-0.568 487000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 389
-0.5688 488000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 414
-0.5696 489000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 439
-0.5704 490000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 464
-0.5712 491000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 489
-0.572 492000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 514
-0.5728 493000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 539
-0.5736 494000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 564
-0.5744 495000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 589
-0.5752 496000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 614
-0.576 497000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 639
-0.5768 498000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 664
-0.5776 499000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 689
-0.5784 500000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 714
-0.5792 501000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 739
-0.58 502000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 764
-0.5808 503000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 789
-0.5816 504000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 814
-0.5824 505000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 839
-0.5832 506000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 864
-0.584 507000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 889
-0.5848 508000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 914
-0.5856 509000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 939
-0.5864 510000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 964
-0.5872 511000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 0
-AI: remaining inc_sum is 989
-0.588 512000 A
-
-WT: Window: 40000  Threshold: 31000
-AI: setting window to 40000 += 1000 * 1
-AI: remaining inc_sum is 14
-0.5888 513000 A
-
-WT: Window: 41000  Threshold: 31000
-AI: setting window to 41000 += 1000 * 0
-AI: remaining inc_sum is 38
-0.5896 514000 A
-
-WT: Window: 41000  Threshold: 31000
-AI: setting window to 41000 += 1000 * 0
-AI: remaining inc_sum is 62
-0.590016 514520 A
-
-WT: Window: 41000  Threshold: 31000
-AI: setting window to 41000 += 1000 * 0
-AI: remaining inc_sum is 74
+0.9144 476000 A
+0.9152 477000 A
+0.916 478000 A
+0.9168 479000 A
+0.9176 480000 A
+0.9184 481000 A
+0.9192 482000 A
+0.92 483000 A
+0.9208 484000 A
+0.9216 485000 A
+0.9224 486000 A
+0.9232 487000 A
+0.924 488000 A
+0.9248 489000 A
+0.9256 490000 A
+0.9264 491000 A
+0.9272 492000 A
+0.928 493000 A
+0.9288 494000 A
+0.9296 495000 A
+0.9304 496000 A
+0.9312 497000 A
+0.932 498000 A
+0.9328 499000 A
+0.9336 500000 A
+0.9344 501000 A
+0.9352 502000 A
+0.9456 503000 A
+0.9464 504000 A
+0.9472 505000 A
+0.948 506000 A
+0.9488 507000 A
+0.9496 508000 A
+0.9504 509000 A
+0.9512 510000 A
+0.952 511000 A
+0.9528 512000 A
+0.9536 513000 A
+0.9544 514000 A
+0.954816 514520 A

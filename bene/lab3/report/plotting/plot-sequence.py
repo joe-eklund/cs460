@@ -31,7 +31,7 @@ class Plotter:
             flag = str(flag)
             self.data.append((t,sequence,flag))
             if not self.min_time or t < self.min_time:
-                self.min_time = t
+                self.min_time = 0
             if not self.max_time or t > self.max_time:
                 self.max_time = t
 

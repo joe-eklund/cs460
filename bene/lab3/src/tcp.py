@@ -33,9 +33,9 @@ class TCP(Connection):
         # for fast retransmit
         self.last_ack = 0
         self.dup_counter = 0
-        # self.drop_next = False
-        # self.has_dropped = False
-        # self.dropped_count = 0
+        self.drop_next = False
+        self.has_dropped = False
+        self.dropped_count = 0
         # send buffer
         self.send_buffer = SendBuffer()
         ############################################# (this never gets adjusted)
@@ -133,7 +133,15 @@ class TCP(Connection):
         #     self.dropped_count += 1
         #     self.trace("%d X" % (sequence))
         #     print "# Dropped packet with sequence number: " + str(sequence)
-            # self.drop_next += 1
+        #     self.drop_next += 1
+        if sequence != 61000 or self.has_dropped:
+            print "# " + str(self.window)
+            self.transport.send_packet(packet)
+        else:
+            self.trace("%d X" % (sequence))
+            print "# Dropped packet with sequence number: " + str(sequence)
+            self.has_dropped = True
+
         self.totalPacketsSent += 1
         # Step 4
         # set a timer
@@ -153,6 +161,8 @@ class TCP(Connection):
 
         # handle duplicate acks
         if packet.ack_number == self.last_ack:
+            if self.seq_plot:
+                self.trace("%d A" % (packet.ack_number))
             if self.proveCong:
                 print "We have 1 duplicate of " + str(self.last_ack)
             self.dup_counter += 1
@@ -176,6 +186,7 @@ class TCP(Connection):
             newBytes = packet.ack_number - self.sequence
             if self.proveCong:
                 print "\nWT: Window: " + str(self.window) + "  Threshold: " + str(self.thresh)
+
             if self.window < self.thresh:   # exponential increase
                 if self.proveCong:
                     print "EI: setting window to " + str(self.window) + " += " + str(packet.ack_number) + " - " + str(self.sequence)
@@ -188,6 +199,8 @@ class TCP(Connection):
                 if self.proveCong:
                     print "AI: setting window to " + str(self.window) + " += " + str(self.mss) + " * " + str(mss_count)
                     print "AI: remaining inc_sum is " + str(self.inc_sum)
+                # if self.seq_plot and mss_count > 0:
+                #     self.trace("%d A" % (packet.ack_number))
                 self.window += self.mss * mss_count                     # adjust window
                 #"""
                 # self.window += (self.mss * newBytes) / self.window
