@@ -26,9 +26,10 @@ class Plotter:
                 t, event = line.split()
             except:
                 continue
-            t = float(t[0])
+            t = float(t)
             event = str(event)
-            self.data.append(t, event)
+            packet = (t, event)
+            self.data.append(packet)
             if not self.min_time or t < self.min_time:
                 self.min_time = 0
             if not self.max_time or t > self.max_time:
@@ -47,8 +48,24 @@ class Plotter:
         figure(figsize=(15,5))
         x = []
         y = []
+        xDrop = []
+        yDrop = []
+        queueSize = 0
+        for t, event in self.data:
+            if event == 'E':
+                queueSize += 1
+                x.append(t)
+                y.append(queueSize)
+            elif event == 'D':
+                queueSize -= 1
+                x.append(t)
+                y.append(queueSize)
+            else:
+                #This is a dropped packet
+                xDrop.append(t)
+                yDrop.append(queueSize + 1)
 
-        for slot in np.arange(.1, (self.max_time + .1), .1):
+        """for slot in np.arange(.1, (self.max_time + .1), .1):
         	upper = min(slot, self.max_time)
         	lower = max(0, slot - 1)
         	subset = [val for val in self.data if (val <= upper and val > lower)]
@@ -57,7 +74,7 @@ class Plotter:
         	print str(slot) + " -- " + str(rate) + " -- " + str(upper) + " -- " + str(lower)
         	x.append(slot)
         	y.append(rate)
-
+        """
         # for (t,sequence,flag) in self.data:
         #     if flag == "A":
         #         ackX.append(t)
@@ -82,13 +99,13 @@ class Plotter:
             # ackX.append(t + 0.2)
             # ackY.append(sequence % (1000*50))
             
-        scatter(x,y,marker='s',s=10)
+        scatter(x,y,marker='s',s=1)
         # scatter(ackX,ackY,marker='d',s=.5)
-        # scatter(dropX,dropY,marker='x',s=100)
+        scatter(xDrop,yDrop,marker='x',s=100)
         xlabel('Time (seconds)')
-        ylabel('Receive Rate (Kbps)')	## ========	 EDIT THIS LABEL
+        ylabel('Queue Size (packets)')	## ========	 EDIT THIS LABEL
         xlim([self.min_time,self.max_time])
-        savefig('1f_rate.png')						## ========= EDIT THIS FILE NAME
+        savefig('1f_queue.png')						## ========= EDIT THIS FILE NAME
 
 
 def parse_options():
