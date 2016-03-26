@@ -27,11 +27,13 @@ class Link(object):
             return
         # drop packet due to queue overflow
         if self.queue_size and len(self.queue) == self.queue_size:
-            self.trace("%d dropped packet due to queue overflow" % (self.address))
+            # self.trace("%d dropped packet due to queue overflow" % (self.address))
+            self.trace("QL")
             return
         # drop packet due to random loss
         if self.loss > 0 and random.random() < self.loss:
-            self.trace("%d dropped packet due to random loss" % (self.address))
+            # self.trace("%d dropped packet due to random loss" % (self.address))
+            self.trace("RL")
             return
         packet.enter_queue = Sim.scheduler.current_time()
         if len(self.queue) == 0 and not self.busy:
@@ -40,6 +42,7 @@ class Link(object):
             self.transmit(packet)
         else:
             # add packet to queue
+            self.trace("E")
             self.queue.append(packet)
         
     def transmit(self,packet):
@@ -55,6 +58,7 @@ class Link(object):
     def next(self,event):
         if len(self.queue) > 0:
             packet = self.queue.pop(0)
+            self.trace("D")
             self.transmit(packet)
         else:
             self.busy = False

@@ -20,7 +20,9 @@ class TCP(Connection):
         self.proveTimer = False
         self.proveCong = False
         self.stand_trace = False
-        self.seq_plot = True
+        self.seq_plot = False
+        self.graph1 = False
+        self.graph2 = 0     # == This is controlled in the transfer file by Sim.set_debug('Link')
         # send window; represents the total number of bytes that may
         # be outstanding at one time
         # maximum segment size, in bytes
@@ -270,6 +272,8 @@ class TCP(Connection):
         ''' R1 '''
         if self.stand_trace:
             self.trace("%s (%d) received TCP segment from %d for %d" % (self.node.hostname,packet.destination_address,packet.source_address,packet.sequence))
+        if self.graph1:
+            self.trace("")#"%d" % (packet.sequence))
         self.receive_buffer.put(packet.body,packet.sequence)
         data, start = self.receive_buffer.get()
         self.ack = start + len(data)
