@@ -83,9 +83,9 @@ class Plotter:
             # # pretend the ACK came 0.2 seconds later
             # ackX.append(t + 0.2)
             # ackY.append(sequence % (1000*50))
-            
+        colors = ["blue", "red", "green", "yellow", "orange"]
         for p in range(0, self.port_count):
-            scatter(x[p],y[p],marker='s',s=10)
+            scatter(x[p],y[p],color=colors[p], marker='s',s=10)
         # scatter(ackX,ackY,marker='d',s=.5)
         # scatter(dropX,dropY,marker='x',s=100)
         xlabel('Time (seconds)')

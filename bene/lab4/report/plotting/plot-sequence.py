@@ -19,7 +19,7 @@ class Plotter:
     def parse(self):
         """ Parse the data file """
         first = None
-        port_to_use = 1
+        port_to_use = 2
         f = open(self.file)
         for line in f.readlines():
             if line.startswith("#"):
