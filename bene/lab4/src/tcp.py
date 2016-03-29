@@ -15,6 +15,7 @@ class TCP(Connection):
         ### Sender functionality
         self.totalQueueingDelay = 0.0
         self.totalPacketsSent = 0
+        self.port = source_port
         self.dynamic = True
         self.output = False
         self.proveTimer = False
@@ -22,7 +23,12 @@ class TCP(Connection):
         self.stand_trace = False
         self.seq_plot = False
         self.graph1 = False
-        self.graph2 = 0     # == This is controlled in the transfer file by Sim.set_debug('Link')
+        self.graph2 = False     # == This is controlled in the transfer file by Sim.set_debug('Link')
+        self.graph3 = False
+        self.graph4 = True
+
+        if self.graph2:
+            Sim.set_debug('Link')
         # send window; represents the total number of bytes that may
         # be outstanding at one time
         # maximum segment size, in bytes
@@ -30,7 +36,7 @@ class TCP(Connection):
         # Step 2
         self.window = self.mss  ######################### This one gets the mess adjusted out of it
         # threshold for slow start
-        self.thresh = 10000000
+        self.thresh = 500000
         self.inc_sum = 0
         # for fast retransmit
         self.last_ack = 0
@@ -128,30 +134,11 @@ class TCP(Connection):
             self.trace("%s (%d) sending TCP segment to %d for %d" % (self.node.hostname,self.source_address,self.destination_address,packet.sequence))
         if self.seq_plot:
             self.trace("%d T" % (packet.sequence))
+        if self.graph4:
+            self.trace(str(self.port) + " " + str(packet.sequence) + " T")
 
-        # == UNCOMMENT THIS FOR DROPPING 3 PACKETS (as well as the code around line 215)
-        # if not self.drop_next or self.dropped_count >= 3:
-        #     print "# " + str(self.window)
-        #     self.transport.send_packet(packet)
-        # else:
-        #     self.dropped_count += 1
-        #     self.trace("%d X" % (sequence))
-        #     print "# Dropped packet with sequence number: " + str(sequence)
-        #     self.drop_next += 1
-
-        # == UNCOMMENT THIS FOR DROPPING 1 PACKET
-        # if sequence != 61000 or self.has_dropped:
-        #     print "# " + str(self.window)
-        #     self.transport.send_packet(packet)
-        # else:
-        #     self.trace("%d X" % (sequence))
-        #     print "# Dropped packet with sequence number: " + str(sequence)
-        #     self.has_dropped = True
-
-        # == UNCOMMENT THIS FOR NO DELIBERATE PACKET DROPPING
         self.transport.send_packet(packet)
 
-        self.totalPacketsSent += 1
         # Step 4
         # set a timer
         if not self.timer:
@@ -167,11 +154,15 @@ class TCP(Connection):
             print "About to check ack_number > sequence: " + str(packet.ack_number) + " ? " + str(self.sequence)
         if self.seq_plot:
             self.trace("%d A" % (packet.ack_number))
+        if self.graph4:
+            self.trace(str(self.port) + " " + str(packet.ack_number) + " A")
 
         # handle duplicate acks
         if packet.ack_number == self.last_ack:
             if self.seq_plot:
                 self.trace("%d A" % (packet.ack_number))
+            if self.graph4:
+                self.trace(str(self.port) + " " + str(packet.ack_number) + " A")
             if self.proveCong:
                 print "We have 1 duplicate of " + str(self.last_ack)
             self.dup_counter += 1
@@ -200,6 +191,8 @@ class TCP(Connection):
                 if self.proveCong:
                     print "EI: setting window to " + str(self.window) + " += " + str(packet.ack_number) + " - " + str(self.sequence)
                 self.window += self.mss
+                if self.graph3:
+                    self.trace(str(self.port) + " " + str(self.window))
             else:                           # additive increase
                 #"""
                 self.inc_sum += (self.mss * newBytes) / self.window     # gather increase until > mss
@@ -209,6 +202,8 @@ class TCP(Connection):
                     print "AI: setting window to " + str(self.window) + " += " + str(self.mss) + " * " + str(mss_count)
                     print "AI: remaining inc_sum is " + str(self.inc_sum)
                 self.window += self.mss * mss_count                     # adjust window
+                if self.graph3:
+                    self.trace(str(self.port) + " " + str(self.window))
 
             # == UNCOMMENT THIS FOR DROPPING 3 PACKETS (as well as the code around line 130)
             # if self.window == 28000:
@@ -239,6 +234,8 @@ class TCP(Connection):
         # multiplicative decrease
         self.thresh = int(max(self.window/2, self.mss))
         self.window = self.mss
+        if self.graph3:
+            self.trace(str(self.port) + " " + str(self.window))
         self.inc_sum = 0
 
         # actually retransmit
@@ -246,6 +243,8 @@ class TCP(Connection):
 
         if self.seq_plot:
             self.trace("%d X" % (sequenceToRetransmit))
+        if self.graph4:
+            self.trace(str(self.port) + " " + str(sequenceToRetransmit) + " X")
 
         self.send_packet(dataToRetransmit, sequenceToRetransmit)
 
@@ -273,7 +272,7 @@ class TCP(Connection):
         if self.stand_trace:
             self.trace("%s (%d) received TCP segment from %d for %d" % (self.node.hostname,packet.destination_address,packet.source_address,packet.sequence))
         if self.graph1:
-            self.trace("")#"%d" % (packet.sequence))
+            self.trace(str(self.port))#"%d" % (packet.sequence))
         self.receive_buffer.put(packet.body,packet.sequence)
         data, start = self.receive_buffer.get()
         self.ack = start + len(data)

@@ -52,10 +52,6 @@ class Main(object):
                           default=1000,
                           help="transmission window size")
 
-        # parser.add_option("-g","--graph",type="int",dest="graph_type",
-        #                     default=1,
-        #                     help="the graph type")
-
         (options,args) = parser.parse_args()
         self.filename = options.filename
         self.loss = options.loss
@@ -79,7 +75,7 @@ class Main(object):
         Sim.scheduler.reset()
         Sim.set_debug('AppHandler')
         Sim.set_debug('TCP')
-        Sim.set_debug('Link')
+        # Sim.set_debug('Link')
 
         # setup application
         a = AppHandler(self.filename, self.out_directory)
@@ -113,19 +109,6 @@ class Main(object):
         # run the simulation
         Sim.scheduler.run()
 
-
-        # print str(self.window) + " & " + \
-        #         str(Sim.scheduler.current_time()) + " & " + \
-        #         str(4116160.0 / float(Sim.scheduler.current_time())) + " & " + \
-        #         str(c2.totalQueueingDelay / float(c1.totalPacketsSent)) + " \\\\"
-
-        # print str(self.window) + "," + str(4116160.0 / float(Sim.scheduler.current_time()))
-
-        #print str(self.window) + "," + str(c2.totalQueueingDelay / float(c1.totalPacketsSent))
-
-        # print "Ave Queueing Delay: " + str(c2.totalQueueingDelay / float(c1.totalPacketsSent))
-        # print "Throughput: " + str(4116160.0 / float(Sim.scheduler.current_time()))
-        # self.total += Sim.scheduler.current_time()
 
 if __name__ == '__main__':
     m = Main()

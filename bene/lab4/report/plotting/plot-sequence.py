@@ -2,7 +2,6 @@ import optparse
 import sys
 
 import matplotlib
-import numpy as np
 from pylab import *
 
 # Parses a file of rates and plot a sequence number graph. Black
@@ -19,23 +18,26 @@ class Plotter:
 
     def parse(self):
         """ Parse the data file """
+        first = None
+        port_to_use = 1
         f = open(self.file)
         for line in f.readlines():
             if line.startswith("#"):
                 continue
             try:
-                t, event = line.split()
+                t,port,sequence,flag = line.split()
             except:
                 continue
+            if int(port) != port_to_use:
+                continue
             t = float(t)
-            event = str(event)
-            packet = (t, event)
-            self.data.append(packet)
+            sequence = int(sequence)
+            flag = str(flag)
+            self.data.append((t,sequence,flag))
             if not self.min_time or t < self.min_time:
                 self.min_time = 0
             if not self.max_time or t > self.max_time:
                 self.max_time = t
-
 
     def plot(self):
         """ Create a sequence graph of the packets. """
@@ -43,31 +45,42 @@ class Plotter:
         figure(figsize=(15,5))
         x = []
         y = []
-        xDrop = []
-        yDrop = []
-        queueSize = 0
-        for t, event in self.data:
-            if event == 'E':
-                queueSize += 1
-                x.append(t)
-                y.append(queueSize)
-            elif event == 'D':
-                queueSize -= 1
-                x.append(t)
-                y.append(queueSize)
-            else:
-                #This is a dropped packet
-                xDrop.append(t)
-                yDrop.append(queueSize + 1)
+        ackX = []
+        ackY = []
+        dropX = []
+        dropY = []
+        mapXY = {}
+        for (t,sequence,flag) in self.data:
+            if flag == "A":
+                ackX.append(t)
+                ackY.append((sequence / 1000) % 50)
+            elif flag == "T":
+                mapXY[sequence] = t
+                # print mapXY
+            elif flag == "X":
+                # get the map entry
+                # put that in drop lists
+                drop_time = mapXY[sequence]
+                dropX.append(drop_time)
+                dropY.append((sequence / 1000) % 50)
 
+            for k in mapXY.keys():
+                x.append(mapXY[k])
+                y.append((k / 1000) % 50)
+
+            # x.append(t)
+            # y.append(sequence % (1000*50))
+            # # pretend the ACK came 0.2 seconds later
+            # ackX.append(t + 0.2)
+            # ackY.append(sequence % (1000*50))
             
-        scatter(x,y,marker='s',s=1)
-        # scatter(ackX,ackY,marker='d',s=.5)
-        scatter(xDrop,yDrop,marker='x',s=100)
+        scatter(x,y,marker='s',s=10)
+        scatter(ackX,ackY,marker='d',s=.5)
+        scatter(dropX,dropY,marker='x',s=100)
         xlabel('Time (seconds)')
-        ylabel('Queue Size (packets)')	## ========	 EDIT THIS LABEL
+        ylabel('(Sequence Number / 1000) Mod 50')
         xlim([self.min_time,self.max_time])
-        savefig(self.output)						## ========= EDIT THIS FILE NAME
+        savefig(self.output)                        ## ========= EDIT THIS FILE NAME
 
 
 def parse_options():
