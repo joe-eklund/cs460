@@ -14,6 +14,12 @@ class Scheduler(object):
         return self.current
 
     def advance_time(self,units):
+        # if ((float(self.current) - int(self.current)) == 0):
+        #     events = self.scheduler.queue
+        #     for event in self.scheduler.queue:
+        #         print str(event).split("argument")[0]
+        #     print
+        #     print
         self.current += units
 
     def add(self,delay,event,handler):

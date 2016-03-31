@@ -219,7 +219,8 @@ class TCP(Connection):
             if self.output:
                 print "After handling the ack, our buffer base is " + str(self.send_buffer.base) + " and next is " + str(self.send_buffer.next)
             self.send_max()
-
+        elif self.send_buffer.base >= self.send_buffer.last:
+            self.cancel_timer()
 
     def retransmit(self,event):
         ''' Retransmit data. '''
