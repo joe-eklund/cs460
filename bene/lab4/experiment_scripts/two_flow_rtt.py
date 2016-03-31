@@ -6,7 +6,6 @@ from src.node import Node
 from src.link import Link
 from src.transport import Transport
 from src.tcp import TCP
-from src.tcp2 import TCP2
 from src.network import Network
 
 import optparse
@@ -84,26 +83,40 @@ class Main(object):
         a2 = AppHandler(self.filename + str(2), self.out_directory)
 
         # setup network
-        net = Network('../networks/setup.txt')
+        net = Network('../networks/setup_rtt.txt')
         net.loss(self.loss)
 
         # setup routes
         n1 = net.get_node('n1')
         n2 = net.get_node('n2')
-        n1.add_forwarding_entry(address=n2.get_address('n1'),link=n1.links[0])
-        n2.add_forwarding_entry(address=n1.get_address('n2'),link=n2.links[0])
+        n3 = net.get_node('n3')
+        n4 = net.get_node('n4')
+        n1.add_forwarding_entry(address=n3.get_address('n1'),link=n1.links[0])
+        n1.add_forwarding_entry(address=n4.get_address('n3'),link=n1.links[0])
+
+        n2.add_forwarding_entry(address=n3.get_address('n2'),link=n2.links[0])
+        n2.add_forwarding_entry(address=n4.get_address('n3'),link=n2.links[0])
+
+        n3.add_forwarding_entry(address=n1.get_address('n3'),link=n3.links[0])
+        n3.add_forwarding_entry(address=n2.get_address('n3'),link=n3.links[1])
+        n3.add_forwarding_entry(address=n4.get_address('n3'),link=n3.links[2])
+
+        n4.add_forwarding_entry(address=n3.get_address('n4'),link=n4.links[0])
+        n4.add_forwarding_entry(address=n1.get_address('n3'),link=n4.links[0])
+        n4.add_forwarding_entry(address=n2.get_address('n3'),link=n4.links[0])
 
         # setup transport
         t1 = Transport(n1)
         t2 = Transport(n2)
+        t4 = Transport(n4)
 
         # setup connection
-        c1 = TCP(t1,n1.get_address('n2'),1,n2.get_address('n1'),1,a1,window=self.window)
-        c2 = TCP(t2,n2.get_address('n1'),1,n1.get_address('n2'),1,a1,window=self.window)
+        c1 = TCP(t1,n1.get_address('n3'),1,n4.get_address('n3'),1,a1,window=self.window)
+        c2 = TCP(t4,n4.get_address('n3'),1,n1.get_address('n3'),1,a1,window=self.window)
 
         # setup connection
-        c3 = TCP2(t1,n1.get_address('n2'),2,n2.get_address('n1'),2,a2,window=self.window)
-        c4 = TCP2(t2,n2.get_address('n1'),2,n1.get_address('n2'),2,a2,window=self.window)
+        c3 = TCP(t2,n2.get_address('n3'),2,n4.get_address('n3'),2,a2,window=self.window)
+        c4 = TCP(t4,n4.get_address('n3'),2,n2.get_address('n3'),2,a2,window=self.window)
 
         # send a file
         with open(self.in_directory + '/' + self.filename,'r') as f:

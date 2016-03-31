@@ -36,7 +36,7 @@ class TCP(Connection):
         # Step 2
         self.window = self.mss  ######################### This one gets the mess adjusted out of it
         # threshold for slow start
-        self.thresh = 500000
+        self.thresh = 100000
         self.inc_sum = 0
         # for fast retransmit
         self.last_ack = 0
