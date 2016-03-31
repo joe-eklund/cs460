@@ -5,7 +5,7 @@ from connection import Connection
 from tcppacket import TCPPacket
 from buffer import SendBuffer,ReceiveBuffer
 
-class TCP(Connection):
+class TCP2(Connection):
     ''' A TCP connection between two hosts.'''
     def __init__(self,transport,source_address,source_port,
                  destination_address,destination_port,app=None,window=1000):
@@ -233,7 +233,7 @@ class TCP(Connection):
                 print "**Timer expired. Doubled timeout to " + str(self.timeout)
 
         # multiplicative decrease
-        self.thresh = int(max(self.window/2, self.mss))
+        self.thresh = int(max(self.window*5.0/6.0, self.mss))
         #additive decrease
         #self.thresh = self.thresh - self.mss
         self.window = self.mss
@@ -313,4 +313,3 @@ class TCP(Connection):
         self.timeout = self.est_rtt + max(1.0, 4.0*self.var_rtt)
         if self.proveTimer:
             print "Timeout adjusted from " + str(before) + " to " + str(self.timeout)
-
