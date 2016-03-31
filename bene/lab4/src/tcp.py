@@ -22,10 +22,10 @@ class TCP(Connection):
         self.proveCong = False
         self.stand_trace = False
         self.seq_plot = False
-        self.graph1 = False
+        self.graph1 = True
         self.graph2 = False     # == This is controlled in the transfer file by Sim.set_debug('Link')
         self.graph3 = False
-        self.graph4 = True
+        self.graph4 = False
 
         if self.graph2:
             Sim.set_debug('Link')
