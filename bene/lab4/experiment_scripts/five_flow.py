@@ -127,7 +127,7 @@ class Main(object):
                 data = f.read(10000)
                 if not data:
                     break
-                Sim.scheduler.add(delay=0, event=data, handler=c1.send)
+                Sim.scheduler.add(delay=0.0, event=data, handler=c1.send)
                 Sim.scheduler.add(delay=0.1, event=data, handler=c3.send)
                 Sim.scheduler.add(delay=0.2, event=data, handler=c5.send)
                 Sim.scheduler.add(delay=0.3, event=data, handler=c7.send)

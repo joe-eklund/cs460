@@ -23,7 +23,7 @@ class TCP(Connection):
         self.stand_trace = False
         self.seq_plot = False
         self.graph1 = True
-        self.graph2 = False     # == This is controlled in the transfer file by Sim.set_debug('Link')
+        self.graph2 = False   # == This is controlled in the transfer file by Sim.set_debug('Link')
         self.graph3 = False
         self.graph4 = False
 
@@ -233,7 +233,9 @@ class TCP(Connection):
                 print "**Timer expired. Doubled timeout to " + str(self.timeout)
 
         # multiplicative decrease
-        self.thresh = int(max(self.window/2, self.mss))
+        self.thresh = int(max(self.window*5.0/6.0, self.mss))
+        #additive decrease
+        #self.thresh = self.thresh - self.mss
         self.window = self.mss
         if self.graph3:
             self.trace(str(self.port) + " " + str(self.window))
