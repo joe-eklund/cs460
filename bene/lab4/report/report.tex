@@ -38,13 +38,22 @@
 
 \section{Introduction}
 
-
+The purpose of our project was to verify our implementation of TCP congestion control by testing using a series of experiments. We divided our experiments into two categories: basic and advanced. The basic experiments tested the performance of our implementation of TCP congestion control by varying the number of flows that concurrently transfer a 1 MB file over a single link between two hosts. The advanced experiments also manipulated the link congestion, but they altered the network topology and the way TCP responded to loss events.
 
 \section{Basic Experiments}
 
+For our basic experiments we created a two host network with the following parameters:
 
-\begin{enumerate}
-  \item One Flow
+\begin{itemize}
+  \item 10 ms - propagation delay
+  \item 100 packets - queue size
+  \item 10 Mbps - transmission rate
+  \item 500,000 bytes - intitial slow start threshold
+\end{itemize}
+
+Each of the experiments uses a different number of flows, meaning a different number of connections transfering 1 MB files simultaneously on the link.
+
+\subsection{One Flow}
   
 \begin{figure}[H]
 \caption{The graph of our one flow receiver's rate over time.}
@@ -74,10 +83,9 @@
     \includegraphics[width=\linewidth]{1f_seq.png}
 \end{figure}
 
-discuss one flow here
+Figure 1 shows how the receive rate changes over time for a single flow. We can see that the receive rate goes up very quickly and levels off; this is expected behavior because the flow has access to the full bandwidth. In Figure 2 we see how the queue size is quickly filled during slow start because the threshold is much larger than the queue size. However after some loss, congestion control helps keep the queue size under its max of 100 packets. If the file that we transfered was larger than 1 MB, we would see the additive increase section at around 1.1 seconds continue without loss for a long time. Figure 3 supports Figure 2 by showing the typical saw tooth pattern that reflects TCP's attempt to find a congestion window size appropriate for the link. 
 
-\bigskip
-\item Two Flow
+\subsection{Two Flow}
 
 \begin{figure}[H]
 \caption{The graph of our two flow receivers' rates over time.}
@@ -121,10 +129,9 @@ discuss one flow here
     \includegraphics[width=\linewidth]{2f2_seq.png}
 \end{figure}
 
-discuss two flow here
+Because the two flows in this experiment were identical, we would expect both data series in Figure 5 to look nearly identical. Figure 5 shows this behavior. We would also expect Figures 7 and 8 to look nearly identical because both flows experience loss at nearly the same time and adjust their windows to the same values. Figures 7 and 8 do look nearly identical as expected. Figure 6 also demonstrates expected behavior; this is clear particularly when you compare Figure 6 with Figure 2. On both graphs we see two peaks loss events occuring while TCP is still identifying a good window for the link. After the second peak both flows start additive increase before the queue is filled. However, in Figure 6 the slope of the increase in queue size during the additive increase period is steeper than the slope in Figure 2 because Figure 6 shows two flows, both doing additive increase. 
 
-\bigskip
-  \item Five Flow
+\subsection{Five Flow}
 
 \begin{figure}[H]
 \caption{The graph of our five flow receivers' rates over time.}
@@ -140,14 +147,14 @@ discuss two flow here
     \includegraphics[width=\linewidth]{5f_queue.png}
 \end{figure}
 
-discuss five flow here
+For five flow we decided a smaller threshold size of 16,000 bytes. We chose to do this because with such a small file there was not enough time for the TCP connections to balance their share of the link before flows started finishing their file transfer. Five flow also differed from one and two flow because each flow began transfering 0.1 seconds after the preceeding flow (i.e. 0.0, 0.1, 0.2, 0.3, 0.4).
 
-\end{enumerate}
+In a correct implementation of TCP, the first flow to begin transferring will immedietely take advantage of all the bandwidth. As more connections begin sharing the link the receive rate of the initial flows should drop while the receive rate of the newer flows should increase until they are roughly the same. This means that they are equally sharing the bandwidth. As early flows finish transferring their files the remaining flows start to take advantage of the newly available bandwidth. Figure 11 is evidence of this behavior. 
 
 \section{Advanced Experiments}
 
-\begin{enumerate}
-\item AIAD
+
+\subsection{Additive Increase - Additive Decrease (AIAD)}
 
 \begin{figure}[H]
 \caption{The graph of our one flow receiver's rate over time with AIAD.}
@@ -166,8 +173,7 @@ discuss five flow here
 
 discuss AIAD here
 
-\bigskip
-\item AIMD
+\subsection{Additve Increase - 5/6 Multiplicative Decrease (AIMD)}
 
 \begin{figure}[H]
 \caption{The graph of our one flow receiver's rate over time with a 5/6 multiplicative decrease.}
@@ -185,8 +191,7 @@ discuss AIAD here
 
 discuss AIMD here
 
-\bigskip
-\item Competing AIMD
+\subsection{Competing AIMD}
 
 \begin{figure}[H]
 \caption{The graph of our two flow receivers' rates over time with competing AIMD.}
@@ -197,8 +202,7 @@ discuss AIMD here
 
 discuss competing AIMD here
 
-\bigskip
-\item Competing RTT
+\subsection{Competing Round Trip Time (RTT)}
 
 \begin{figure}[H]
 \caption{The graph of our two flow receivers' rates over time with competing RTT.}
@@ -208,8 +212,6 @@ discuss competing AIMD here
 \end{figure}
 
 discuss competing RTT here
-
-\end{enumerate}
 
 
 \end{document}
