@@ -4,8 +4,9 @@ import random
 
 class Link(object):
     def __init__(self,address=0,startpoint=None,endpoint=None,queue_size=None,
-                 bandwidth=1000000.0,propagation=0.001,loss=0):
+                 bandwidth=1000000.0,propagation=0.001,loss=0,weight=1):
         self.running = True
+        self.weight = weight
         self.address = address
         self.startpoint = startpoint
         self.endpoint = endpoint
