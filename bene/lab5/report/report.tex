@@ -53,19 +53,39 @@ To demonstrate that our DVR implementation works as it should, we ran a series o
     n1--n2--n3--n4--n5
 
   Link Addresses:
-    n1->n2 = 0
-    n2->n1 = 1
+    n1-->n2 = 1
+    n2-->n1 = 2
+    n2-->n3 = 3
+    n3-->n2 = 4
+    n3-->n4 = 5
+    n4-->n3 = 6
+    n4-->n5 = 7
+    n5-->n4 = 8
 \end{lstlisting}
 
 \begin{lstlisting}[caption={5 nodes in a ring}]
+  Topology:
         n3 
       /   \
     n2     n4
      |     |
     n1 --- n5
+
+  Link Addresses:
+    n1-->n2 = 1
+    n1-->n5 = 2
+    n2-->n1 = 3
+    n2-->n3 = 4
+    n3-->n2 = 5
+    n3-->n4 = 6
+    n4-->n3 = 7
+    n4-->n5 = 8
+    n5-->n4 = 9
+    n5-->n1 = 10
 \end{lstlisting}
 
 \begin{lstlisting} [caption={5 node mesh}]
+  Topology:
        --- n7 --- n8
       /    |       |
     n9     |       |
@@ -79,6 +99,45 @@ To demonstrate that our DVR implementation works as it should, we ran a series o
                |      |
                |      |
               n11    n12
+
+  Link Addresses:
+    n1-->n2 = 1 
+    n1-->n4 = 2
+    n1-->n6 = 3
+    n1-->n10 = 4
+    n2-->n1 = 5
+    n2-->n3 = 6
+    n2-->n8 = 7
+    n2-->n14 = 8
+    n3-->n2 = 9
+    n3-->n5 = 10
+    n3-->n14 = 11
+    n4-->n1 = 12
+    n4-->n5 = 13
+    n4-->n11 = 14
+    n5-->n3 = 15
+    n5-->n4 = 16
+    n5-->n12 = 17
+    n5-->n13 = 18
+    n6-->n1 = 19
+    n6-->n7 = 20
+    n6-->n9 = 21
+    n7-->n6 = 22
+    n7-->n8 = 23
+    n7-->n9 = 24
+    n8-->n2 = 25
+    n8-->n7 = 26
+    n9-->n6 = 27
+    n9-->n7 = 28
+    n10-->n1 = 29
+    n11-->n4 = 30
+    n12-->n5 = 31
+    n13-->n5 = 32
+    n14-->n2 = 33
+    n14-->n3 = 34
+    n14-->n15 = 35
+    n15-->n14 = 36
+
 \end{lstlisting}
 
 We ran our DVR implementation on each of these networks and verified that routes were correctly established by outputting the state of the nodes both during and after identifying the entire network.
