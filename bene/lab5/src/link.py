@@ -65,7 +65,9 @@ class Link(object):
             self.busy = False
 
     def down(self,event):
+        self.trace("Deactivating link from " + str(self.startpoint.hostname) + " to " + str(self.endpoint.hostname))
         self.running = False
 
     def up(self,event):
+        self.trace("Activating link from " + str(self.startpoint.hostname) + " to " + str(self.endpoint.hostname))
         self.running = True

@@ -15,12 +15,14 @@ class BroadcastApp(object):
         self.node = node
 
     def receive_packet(self,packet):
+        # print "In receive_packet for host " + str(self.node.hostname) + " with the " + str(packet.body)
+        # return
         print Sim.scheduler.current_time(),self.node.hostname,packet.ident
 
 if __name__ == '__main__':
     # parameters
     Sim.scheduler.reset()
-    Sim.set_debug(True)
+    # Sim.set_debug(True)
 
     # setup network
     net = Network('../networks/five-nodes.txt')
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     n5.add_protocol(protocol="broadcast",handler=b5)
 
     # send a broadcast packet from 1 with TTL 2, so everyone should get it
-    p = packet.Packet(source_address=n1.get_address('n2'),destination_address=0,ident=1,ttl=2,protocol='broadcast',length=100)
+    p = packet.Packet(source_address=n1.get_address('n2'),destination_address=0,ident=1,ttl=2,protocol='broadcast',length=100,body="happy packet")
     Sim.scheduler.add(delay=0, event=p, handler=n1.send_packet)
 
     # send a broadcast packet from 1 with TTL 1, so just nodes 2 and 3

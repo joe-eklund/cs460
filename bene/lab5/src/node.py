@@ -28,6 +28,12 @@ class Node(object):
                 return link
         return None
 
+    def get_rev_link(self,address):
+        for link in self.links:
+            if link.endpoint.get_address(self.hostname) == address:
+                return link
+        return None
+
     def get_address(self,name):
         for link in self.links:
             if link.endpoint.hostname == name:
@@ -111,7 +117,10 @@ class Node(object):
         link.send_packet(packet)
 
     def forward_broadcast_packet(self,packet):
+        # print "broadcasting from " + self.hostname
         for link in self.links:
+            # print "on link " + str(link.address) + " to " + str(link.endpoint.hostname) + " with " + str(packet.body)
             self.trace("%s forwarding broadcast packet to %s" % (self.hostname,link.endpoint.hostname))
             packet_copy = copy.deepcopy(packet)
+            packet_copy.source_address=link.address
             link.send_packet(packet_copy)

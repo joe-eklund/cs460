@@ -9,6 +9,10 @@ class Sim(object):
         Sim.debug[kind] = True
 
     @staticmethod
+    def rem_debug(kind):
+    	del Sim.debug[kind]
+
+    @staticmethod
     def trace(kind,message):
         if kind in Sim.debug:
             print Sim.scheduler.current_time(),message
