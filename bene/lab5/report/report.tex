@@ -42,20 +42,22 @@
 
 \section{Introduction}
 
-Intro here
+For this project, we implemented a distance vector routing (DVR) protocol for nodes in a network to discover the best routes to other nodes. This protocol works by each node broadcasting a distance vector to its neighbors. This distance vector tells neighbors what it would cost to get to other nodes in the network from the current node. Nodes use their neighbors distance vectors to build efficient routing tables for forwarding packets.
 
 \section{Experiments}
 
-To demonstrate that our routing protocol implementation works as it should, we ran a series of routing tests. We built three different networks and outputed the distance vectors for each node as the forwarding tables were built. The three networks we used were as follows:
+To demonstrate that our DVR implementation works as it should, we ran a series of routing tests. We built three different networks shown below in snippets 1-3.
 
-\begin{itemize}
-  \item 5 nodes in a line
-   \begin{lstlisting} 
-n1--n2--n3--n4--n5
+\begin{lstlisting}[caption={5 nodes in a line}]
+  Topology:
+    n1--n2--n3--n4--n5
+
+  Link Addresses:
+    n1->n2 = 0
+    n2->n1 = 1
 \end{lstlisting}
 
-  \item 5 node in a ring
-   \begin{lstlisting} 
+\begin{lstlisting}[caption={5 nodes in a ring}]
         n3 
       /   \
     n2     n4
@@ -63,28 +65,29 @@ n1--n2--n3--n4--n5
     n1 --- n5
 \end{lstlisting}
 
-  \item 15 node mesh
-  \begin{lstlisting} 
-#       --- n7 --- n8
-#      /    |       |
-#    n9     |       |
-#      \--- n6     n2 -- n14 -- n15
-#            \    /  \   /
-#             \  /    \ /
-#      n10 --- n1     n3
-#               |      |
-#               |      |
-#              n4 --- n5 -- n13
-#               |      |
-#               |      |
-#              n11    n12
+\begin{lstlisting} [caption={5 node mesh}]
+       --- n7 --- n8
+      /    |       |
+    n9     |       |
+      \--- n6     n2 -- n14 -- n15
+            \    /  \   /
+             \  /    \ /
+      n10 --- n1     n3
+               |      |
+               |      |
+              n4 --- n5 -- n13
+               |      |
+               |      |
+              n11    n12
 \end{lstlisting}
-\end{itemize}
 
+We ran our DVR implementation on each of these networks and verified that routes were correctly established by outputting the state of the nodes both during and after identifying the entire network.
 
 \subsection{Five Node Line}
 
- \begin{lstlisting} 
+These experiments relate to the network in Snippet 1. After the network was setup, the nodes were given 10 simulator minutes to build their routing tables, then a packet was sent from n1 to n5. The results are shown in snippets 4-6.
+
+ \begin{lstlisting} [caption={The path taken when transmitting a packet from n1 to n5}]
 =====================
 600.001064 n1 forwarding packet to 8
 600.002864 n2 forwarding packet to 8
@@ -93,7 +96,7 @@ n1--n2--n3--n4--n5
 600.008264 n5 received packet
 \end{lstlisting}
 
- \begin{lstlisting} 
+ \begin{lstlisting} [caption={Example output of nodes updating their distance vectors based on neighbor broadcasts}]
 ===============================
 n2 receiving a new dv from address 1
 Vector received:  {1: 0}
@@ -126,7 +129,7 @@ DV after update:  {1: 1, 2: 0, 3: 0, 4: 1, 5: 1}
 ===============================
 \end{lstlisting}
 
- \begin{lstlisting} 
+ \begin{lstlisting} [caption={The final distance vectors and forwarding tables for each node in the network}]
 ===============================
 Final DV for n1: {1: 0, 2: 1, 3: 1, 4: 2, 5: 2, 6: 3, 7: 3, 8: 4}
 Final DV for n2: {1: 1, 2: 0, 3: 0, 4: 1, 5: 1, 6: 2, 7: 2, 8: 3}
@@ -141,11 +144,27 @@ Final forwarding table for n4: {1: 6, 2: 6, 3: 6, 4: 6, 5: 6, 8: 7}
 Final forwarding table for n5: {1: 8, 2: 8, 3: 8, 4: 8, 5: 8, 6: 8, 7: 8}
 \end{lstlisting}
 
+Snippet 4 shows that we were able to successfully send a packet from n1 to n5. The output says they are "forwarding...to 8", but this is address 8 which belongs to node 5. The nodes were able to correctly establish forwarding tables.
 
+Snippet 5 shows a few examples of nodes receiving a neighbor's distance vector and updating their own appropriately. They key/value pairs map addresses to distances rather than nodes to distances, which is why the keys go up to 8 rather than 4. These outputs show that the nodes are updating as expected.
+
+Snippet 6 shows the final distance vector and forwarding table for each node in the network. The forwarding table key/value pairs map target address to outgoing link address. By comparing Snippet 6 to Snippet 1, we can see that the distance vectors all describe the appropriate distances and the forwarding tables give the correct routes.
 
 \subsection{Five Node Ring}
 
- \begin{lstlisting} 
+These experiments relate to the network in Snippet 2. After the network was setup, the following steps took place:
+
+\begin{enumerate}
+  \item The nodes were given 5 simulator minutes to build their routing tables.
+  \item A packet was sent from n1 to n5.
+  \item Ten seconds later, the link between nodes n1 and n5 was dropped.
+  \item The network was given 5 more minutes to rebuild routing tables.
+  \item Another packet was sent from n1 to n5.
+\end{enumerate}
+
+After the link is dropped, we expect the network to adjust its routes and distance vectors automatically. This is shown below in snippets 7-9.
+
+ \begin{lstlisting} [caption={The path taken when transmitting a packet from n1 to n5 before and after dropping a link}]
 300.00108 n1 forwarding packet to 10
 300.00288 n5 received packet
 310.00108 Deactivating link from n1 to n5
@@ -157,7 +176,7 @@ Final forwarding table for n5: {1: 8, 2: 8, 3: 8, 4: 8, 5: 8, 6: 8, 7: 8}
 610.00936 n5 received packet
 \end{lstlisting}
 
- \begin{lstlisting} 
+ \begin{lstlisting} [caption={The final distance vectors and forwarding tables for each node before dropping a link}]
  ===============================
 Final DV for n1: {1: 0, 2: 0, 3: 1, 4: 1, 5: 2, 6: 2, 7: 2, 8: 2, 9: 1, 10: 1}
 Final DV for n2: {1: 1, 2: 1, 3: 0, 4: 0, 5: 1, 6: 1, 7: 2, 8: 2, 9: 2, 10: 2}
@@ -172,7 +191,7 @@ Final forwarding table for n4: {1: 8, 2: 8, 3: 7, 4: 7, 5: 7, 6: 7, 9: 8, 10: 8}
 Final forwarding table for n5: {1: 10, 2: 10, 3: 10, 4: 10, 5: 9, 6: 9, 7: 9, 8: 9}
 \end{lstlisting}
 
- \begin{lstlisting} 
+ \begin{lstlisting} [caption={The final distance vectors and forwarding tables for each node after dropping a link}]
 ===============================
 Final DV for n1: {1: 0, 2: 0, 3: 1, 4: 1, 5: 2, 6: 2, 7: 3, 8: 3, 9: 4, 10: 4}
 Final DV for n2: {1: 1, 2: 1, 3: 0, 4: 0, 5: 1, 6: 1, 7: 2, 8: 2, 9: 3, 10: 3}
@@ -187,12 +206,29 @@ Final forwarding table for n4: {1: 7, 2: 7, 3: 7, 4: 7, 5: 7, 6: 7, 9: 8, 10: 8}
 Final forwarding table for n5: {1: 9, 2: 9, 3: 9, 4: 9, 5: 9, 6: 9, 7: 9, 8: 9}
  \end{lstlisting}
  
+Snippet 7 shows that initially the packet is transmitted directly from n1 to n5, but after the link between those nodes is dropped, the network learns the new route to n5 and is able to forward the packet from n1 to n5 by going through each of the other nodes.
+
+Comparing snippets 8 and 9 show how each node individually adjusted its understanding of the network when the link was dropped. For example, the distance vector for n1 gets updated so that the distance to address 10 (at n5) gets changed from 1 to 4, and the forwarding table gets changed to transmit on link 1 instead of link 2.
+
+
 \subsection{Fifteen Node}
 
+These experiments relate to the network in Snippet 3. After the network was setup, the following steps took place:
 
+\begin{enumerate}
+  \item The nodes were given 5 simulator minutes to build their routing tables.
+  \item A packet was sent from n1 to n12.
+  \item Ten seconds later, the link between nodes n4 and n5 was dropped.
+  \item The network was given 5 more minutes to rebuild routing tables.
+  \item Another packet was sent from n1 to n12.
+  \item Ten seconds later, the link between nodes n4 and n5 was readded.
+  \item The network was given 5 more minutes to rebuild routing tables.
+  \item Another packet was sent from n1 to n12.
+\end{enumerate}
 
+After the link is both dropped and readded, we expect the network to adjust its routes and distance vectors automatically. This is shown below in snippets 10-11.
 
- \begin{lstlisting} 
+ \begin{lstlisting} [caption={The path taken when transmitting packets from n1 to n5 before and after each link change}]
 300.001288 n1 forwarding packet to 31
 300.003088 n4 forwarding packet to 31
 300.004888 n5 forwarding packet to 31
@@ -250,5 +286,6 @@ DV after update:  {1: 2, 2: 2, 3: 2, 4: 2, 5: 2, 6: 2, 7: 2, 8: 2, 9: 1, 10: 1, 
 ===============================
 \end{lstlisting}
 
+Snippet 10 shows that the first packet correctly takes the shortest path from n1 to n12, and that the second packet correctly reroutes to the next shortest path after the link is dropped. We also see that the final packet, which is sent after the link is restored, was able to take the original shortest path from n1 to n12.
 
 \end{document}
